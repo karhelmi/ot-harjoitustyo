@@ -1,0 +1,103 @@
+commit 3d43f92d0c605222ad60e634fe1634c849d8b9f4
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 11:08:06 2021 +0200
+
+    hakemisto ja kolme tiedostoa lisätty
+
+ hakemistoja/file1.txt | 0
+ hakemistoja/file2.txt | 0
+ hakemistoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1850341e47160d839eb1fee16110a4dd934cef7b
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:52:35 2021 +0200
+
+    kahden tiedoston sisältöä muutettu
+
+ eka.txt    | 68 ++------------------------------------------------------------
+ kolmas.txt | 13 +++++++-----
+ 2 files changed, 10 insertions(+), 71 deletions(-)
+
+commit 1b242499e05811ada4daf927e29dcc2610459950
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:41:09 2021 +0200
+
+    tiedosto.txt nimi muutettu eka.txt:ksi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7060ef6a956711dce68cace9aa2c6d9d4644bae7
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:38:51 2021 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit 77f0ff6ebc55431f7be0daff69991b7c1800c84e
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:33:14 2021 +0200
+
+    tekstiä poistettu ja lisätty uutta tiedosto.txt:een
+
+ tiedosto.txt | 59 ++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 28 insertions(+), 31 deletions(-)
+
+commit b7c088076bc429928ade4e30b83a3bfcd8739544
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:30:26 2021 +0200
+
+    paljon tekstiä lisätty tiedostoon tiedosto.txt
+
+ tiedosto.txt | 63 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 63 insertions(+)
+
+commit ae35de89a6f407df9808c3170752ac90c4094540
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:16:41 2021 +0200
+
+    stuff-hakemiston ja jonkin tiedoston lisäys
+
+ stuff/jokin_tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0bfd3bd70e5ddef16392d1d03d24be64e48a7b15
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:13:42 2021 +0200
+
+    toinen.txt ja kolmas.txt sisältöä muokattu.
+
+ kolmas.txt | 11 +++++++++++
+ toinen.txt |  3 +++
+ 2 files changed, 14 insertions(+)
+
+commit 36212f8c23c203d7702e54588e25cf8e2d96f7b2
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Tue Mar 23 10:11:33 2021 +0200
+
+    kolmas.text luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit bfe1cc1914cefb9b11fcffb7c4dcb1aec157b7f9
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Thu Mar 18 15:08:56 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 7 +++++++
+ toinen.txt   | 0
+ 2 files changed, 7 insertions(+)
+
+commit bf5f8768e0b218d1c2036402c9a5634eb400f52f
+Author: karhelmi <helmi.karesti@helsinki.fi>
+Date:   Thu Mar 18 15:04:22 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
