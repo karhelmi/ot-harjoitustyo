@@ -9,7 +9,7 @@
 
 # <h1> OMAT MUISTIINPANOT
 <h6> Lisään tähän uuden rivin.
-
+<h5> Lisään toisen rivin, jotta saadaan epäsynkroiniin nämä.
 <h2> Kirjoitan tänne muistiin näitä **Markdown**-tyylin asioita:
 
 Eli voi **lihavoida** sanoja tai *kursivoida*. Voi myös [link to Google!](http://google.com) laittaa linkin.
