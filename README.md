@@ -1,11 +1,20 @@
-# <h1> Kirjoitan tänne muistiin näitä **Markdown**-tyylin asioita:
+# <h1> Ohjelmistotekniikka, harjoitustyö
+## <h2> Tehtävät
+### <H3> Viikko 1
+[komentorivi.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+
+
+
+# <h1> OMAT MUISTIINPANOT
+<h2> Kirjoitan tänne muistiin näitä **Markdown**-tyylin asioita:
 
 Eli voi **lihavoida** sanoja tai *kursivoida*. Voi myös [link to Google!](http://google.com) laittaa linkin.
 
 *Ilmeisesti Markdown osaa lukea noita merkintöjä.*
 
 Headers
-# <h1> tag
+# <h1> tag (boldattu)
 ## <h2> tag
 #### <h4> tag jne.
 
