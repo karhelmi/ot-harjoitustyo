@@ -1,17 +1,23 @@
 # <h1> Ohjelmistotekniikka, harjoitustyö
 
-[Linkki harjoitustyön työaikakirjanpitoon](https://github.com/karhelmi/ot-harjoitustyo/blob/master/tyoaikakirjanpito.md)
+[Linkki harjoitustyön TYÖAIKAKIRJANPITOon](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
 ## <h2> Tehtävät
 ### <H3> Viikko 1
+
 [komentorivi.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
    
 [gitlog.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 ### <H3> Viikko 2
+
 Linkki työaikakirjanpitoon lisätty tämän dokumentin otsikon alle.
 
+Huom. Testikattavuuden screenshot on viikon 2 unicafe-kansiossa. Tässä [screenshot-linkki](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko2/unicafe/Screenshot_testikattavuus.png)
+
 [Linkki harjoitustyön alustavaan määrittelydokumenttiin]**(LIsää tänne linkki!!!!)**
+
+
 
 # <h1> OMAT MUISTIINPANOT
 <h6> Lisään tähän uuden rivin.
