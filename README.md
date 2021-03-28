@@ -15,7 +15,7 @@ Linkki työaikakirjanpitoon lisätty tämän dokumentin otsikon alle.
 
 Huom. Testikattavuuden screenshot on viikon 2 unicafe-kansiossa. Tässä [screenshot-linkki](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko2/unicafe/Screenshot_testikattavuus.png)
 
-[Linkki harjoitustyön alustavaan määrittelydokumenttiin]**(LIsää tänne linkki!!!!)**
+[Linkki harjoitustyön alustavaan määrittelydokumenttiin](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 
 
