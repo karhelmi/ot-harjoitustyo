@@ -9,11 +9,11 @@ Sovellus on lastenvaate- ja tarvikerekisteri. Sovelluksen avulla käyttäjä voi
 
 ## Sovelluksen käyttäjät
 
-Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaali käyttäjä*. 
+Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaalikäyttäjä*. 
 
 ## Käyttöliittymäluonnos
 
-Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), ii) käyttäjätunnuksen luontinäkymä (harmaan laatikot) sekä iii) vaate/tavaralistanäkymästä (vihreät laatikot). Oranssit laatikot kuvastavat funktioita, joista kaikki eivät ole alussa mukana/käytössä.
+Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), ii) käyttäjätunnuksen luontinäkymä (harmaan laatikot) sekä iii) vaate/tavaralistanäkymä (vihreät laatikot). Oranssit laatikot kuvastavat funktioita, joista kaikki eivät ole alussa mukana/käytössä.
 ![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_27.3.21.png)
 
 ## Perusversion tarjoama toiminnallisuus
@@ -34,6 +34,7 @@ Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee 
 * sukupuoli (T, P, unisex)
 * kunto (kuin uusi, hyvä, tyydyttävä, rikki)
 * kuva(jos mahdollista)
+* pesty (kyllä, ei, n.a.)
 * huomioitavaa
 
 Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
