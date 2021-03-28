@@ -14,21 +14,42 @@ Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaali käytt�
 ## Käyttöliittymäluonnos
 
 Saako tähän kuvan.
-![](linkki tähän)
+![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_27.3.21.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
 ### Ennen kirjautumista
 
-*Normaali käyttäjä* voi kirjautua sisään omaan rekisteriinsä käyttäjätunnuksen ja salasanan avulla. Jos hänellä ei vielä ole käyttäjätunnuksia, hän voi mennä luomaan uuden käyttäjätunnuksen ja salasanan, jonka jälkeen hän voi kirjautua palveluun.
+*Normaalikäyttäjä* voi kirjautua sisään omaan rekisteriinsä käyttäjätunnuksen ja salasanan avulla. Jos hänellä ei vielä ole käyttäjätunnuksia, hän voi mennä luomaan uuden käyttäjätunnuksen ja salasanan, jonka jälkeen hän voi kirjautua palveluun.
 
 ### Kirjautumisen jälkeen
 
-Kirjautumisen jälkeen *normaalille käyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät tiedot (esim. *tyyppi* (vaate, kengät, tavara...), *koko*, *merkki*, *väri*, *sukupuoli* (T, P, unisex), *kunto* (Kuin uusi, Hyvä, Tyydyttävä, Rikki), *huomioitavaa*)
+Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät lisätiedot, jotka sisältävät ainakin seuraavat tiedot:
+* suosikki (x, jos suosikki)
+* tyyppi (vaate, kengät, tavara...)
+* sisä/ulko(käyttöön)
+* koko
+* merkki
+* väri
+* sukupuoli (T, P, unisex)
+* kunto (kuin uusi, hyvä, tyydyttävä, rikki)
+* kuva(?? jos mahdollista)
+* huomioitavaa
+
+Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
+Käyttäjä voi kirjautua ulos (log out) sovelluksesta.
 
 ## Toimintaympäristön rajoitteet
 
+Sovelluksen tulee toimia Linux-käyttöjärjestelmällä varustetussa tietokoneessa.
+Kaikki sovelluksen tiedot talletetaan paikallisen koneen levylle.
+
 ## Jatkokehitysideoita ja muuta
-1. Omistaa, lainaa vaatteita
-1. Lisätä toinen käyttäjä, joka olisi 'vieraileva käyttäjä*. Kaverit voisivat kirjautua sovellukseen vierailevana käyttäjänä, mikä sallisi heidän selata ja valita, jos he haluavat joitain vaatteita tai tarvikkeita.
-1. Saatetaan laajentaa vielä esim. lasten huonekaluihin, rattaisiin jne.
+1. Tehdään hakutoiminto (search), jonka avulla *normaalikäyttäjä* voi omasta rekisteristään etsiä vaatteita ja tavaroita tietyin parametrein (esim. koko).
+1. Kuvan lisäys jokaiselle tuotteelle/tarvikkeelle rekisteriin.
+2. Vaate/tarvike on mahdollista poistaa rekisteristä.
+3. *Normaalikäyttäjä* voi merkitä, jos hän on lainannut joitain vaatteita tai tavaroita joksikin aikaväliksi ja kenelle.
+4. *Normaalikäyttäjä* voisi pitää kirjaa seuraavista hankinnoista eli mitä tulee hankkia ja milloin.
+5. *Normaalikäyttäjä* voisi nähdä yhteenvetotaulukossa kuinka monta vaatetta tai tarviketta hänellä on rekisterissä ja ehkä jaoteltuna tiettyihin osakokonaisuuksiin.
+6. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa vaatteet ja tarvikkeet, joista on kiinnostunut.
+7. Saatetaan laajentaa vielä esim. lasten huonekaluihin, rattaisiin jne.
