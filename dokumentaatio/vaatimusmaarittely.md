@@ -13,7 +13,7 @@ Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaali käytt�
 
 ## Käyttöliittymäluonnos
 
-Saako tähän kuvan.
+Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), ii) käyttäjätunnuksen luontinäkymä (harmaan laatikot) sekä iii) vaate/tavaralistanäkymästä (vihreät laatikot). Oranssit laatikot kuvastavat funktioita, joista kaikki eivät ole alussa mukana/käytössä.
 ![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_27.3.21.png)
 
 ## Perusversion tarjoama toiminnallisuus
@@ -33,7 +33,7 @@ Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee 
 * väri
 * sukupuoli (T, P, unisex)
 * kunto (kuin uusi, hyvä, tyydyttävä, rikki)
-* kuva(?? jos mahdollista)
+* kuva(jos mahdollista)
 * huomioitavaa
 
 Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
