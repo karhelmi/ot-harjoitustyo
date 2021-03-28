@@ -2,6 +2,7 @@
 
 [TYÖAIKAKIRJANPITO](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 (linkki harjoitustyön työaikakirjanpitoon)
+
 [Q&A](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/QetA.md) (linkki)
 
 ## <h2> Tehtävät
