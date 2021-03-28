@@ -1,6 +1,7 @@
 # <h1> Ohjelmistotekniikka, harjoitustyö
 
-[TYÖAIKAKIRJANPITO] (linkki harjoitustyön työaikakirjanpitoon) (https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+[TYÖAIKAKIRJANPITO](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+(linkki harjoitustyön työaikakirjanpitoon)
 
 ## <h2> Tehtävät
 ### <H3> Viikko 1
