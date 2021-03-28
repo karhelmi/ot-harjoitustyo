@@ -14,7 +14,7 @@ Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaali käytt�
 ## Käyttöliittymäluonnos
 
 Saako tähän kuvan.
-![](./kuvat/Kayttoliittymaluonnos_vaatimusmaarittelyyn 27.3.21.png)
+![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_27.3.21.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -32,8 +32,12 @@ Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee 
 * merkki
 * väri
 * sukupuoli (T, P, unisex)
-* kunto (Kuin uusi, Hyvä, Tyydyttävä, Rikki)
+* kunto (kuin uusi, hyvä, tyydyttävä, rikki)
+* kuva(?? jos mahdollista)
 * huomioitavaa
+
+Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
+Käyttäjä voi kirjautua ulos (log out) sovelluksesta.
 
 ## Toimintaympäristön rajoitteet
 
@@ -41,6 +45,11 @@ Sovelluksen tulee toimia Linux-käyttöjärjestelmällä varustetussa tietokonee
 Kaikki sovelluksen tiedot talletetaan paikallisen koneen levylle.
 
 ## Jatkokehitysideoita ja muuta
-1. *Normaalikäyttäjä* voi merkitä, jos hän on lainannut joitain vaatteita tai tavaroita joksikin aikaväliksi ja kenelle.
-1. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa vaatteet ja tarvikkeet, joista on kiinnostunut.
-1. Saatetaan laajentaa vielä esim. lasten huonekaluihin, rattaisiin jne.
+1. Tehdään hakutoiminto (search), jonka avulla *normaalikäyttäjä* voi omasta rekisteristään etsiä vaatteita ja tavaroita tietyin parametrein (esim. koko).
+1. Kuvan lisäys jokaiselle tuotteelle/tarvikkeelle rekisteriin.
+2. Vaate/tarvike on mahdollista poistaa rekisteristä.
+3. *Normaalikäyttäjä* voi merkitä, jos hän on lainannut joitain vaatteita tai tavaroita joksikin aikaväliksi ja kenelle.
+4. *Normaalikäyttäjä* voisi pitää kirjaa seuraavista hankinnoista eli mitä tulee hankkia ja milloin.
+5. *Normaalikäyttäjä* voisi nähdä yhteenvetotaulukossa kuinka monta vaatetta tai tarviketta hänellä on rekisterissä ja ehkä jaoteltuna tiettyihin osakokonaisuuksiin.
+6. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa vaatteet ja tarvikkeet, joista on kiinnostunut.
+7. Saatetaan laajentaa vielä esim. lasten huonekaluihin, rattaisiin jne.
