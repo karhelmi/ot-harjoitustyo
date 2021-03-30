@@ -1,4 +1,4 @@
-# Helmin työaikakirjanpito #
+# Harjoitustyön työaikakirjanpito #
 ##  Ohjelmistotekniikan harjoitustyö periodi 4 / 2021
 
 | Pvm    | Tunnit| Tehdyt asiat |
