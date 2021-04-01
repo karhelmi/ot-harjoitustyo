@@ -5,12 +5,6 @@
 
 [Q&A](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/QetA.md) (linkki)
 
-## <h2> Tehtävät
-### <H3> Viikko 1
-
-[komentorivi.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-   
-[gitlog.txt](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 ### <H3> Viikko 2
 
