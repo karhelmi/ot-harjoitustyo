@@ -4,3 +4,4 @@
 3. Onko kuvia helppo lisätä SQL-tietokantaan?
 4. Miten saan poistettua tiedostoista poistetun kuvan githubista? (Ei onnistunut git rm tiedoston_nimi)
 5. import tkinter komentoriviltä ei onnistu. [linkki ohjeisiin](https://ohjelmistotekniikka-hy.github.io/python/tkinter)
+6. Tuleeko nämä olla public githubissa vai jotain muuta?
