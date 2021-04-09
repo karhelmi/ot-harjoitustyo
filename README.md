@@ -1,72 +1,39 @@
 # <h1> Ohjelmistotekniikka, harjoitustyö
 
-[TYÖAIKAKIRJANPITO](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
-(linkki harjoitustyön työaikakirjanpitoon)
+##<h2> Yleistä
+Status: Ohjelma on työn alla
 
-[Q&A](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/QetA.md) (linkki)
+Olen tehnyt tämän ohjelman Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
+Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
+
+Sovellus on vaate- ja tarvikerekisteri...[lisätään myöhemmin]
 
 
-### <H3> Viikko 2
 
-Linkki työaikakirjanpitoon lisätty tämän dokumentin otsikon alle.
+##<H2> Dokumentaatio
 
-Huom. Testikattavuuden screenshot on viikon 2 unicafe-kansiossa. Tässä [screenshot-linkki](https://github.com/karhelmi/ot-harjoitustyo/blob/master/laskarit/viikko2/unicafe/Screenshot_testikattavuus.png)
+* [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (Linkki harjoitustyön alustavaan määrittelydokumenttiin)
+* [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
-[Vaatimusmäärittelydokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (Linkki harjoitustyön alustavaan määrittelydokumenttiin)
+##<h2> Komentorivitoiminnot ohjelmalle:
+Invoke-työkalu on otettu käyttöön. Voit varmistaa Invoken avulla käytössä olevat komennot komennolla "poetry run invoke --list".
+Ne sisältävät ainakin:
+* start
+* test
+* coverage
+* coverage-report
 
-*****************************
-# <h1> OMAT MUISTIINPANOT
-<h6> Lisään tähän uuden rivin.
-<h5> Lisään toisen rivin, jotta saadaan epäsynkroiniin nämä.
-<h2> Kirjoitan tänne muistiin näitä **Markdown**-tyylin asioita:
+#<h3> Suorittaminen ja käynnistäminen#
+Ohjelma käynnistyy komennolla
 
-Eli voi **lihavoida** sanoja tai *kursivoida*. Voi myös [link to Google!](http://google.com) laittaa linkin.
+##poetry run invoke start##
 
-*Ilmeisesti Markdown osaa lukea noita merkintöjä.*
+#<h3> Testaus
 
-Headers
-# <h1> tag (boldattu)
-## <h2> tag
-#### <h4> tag jne.
+##poetry run invoke test##
 
-Emphasis
-*This will be italic*
-_This will be italic also_
+#<h3> Testikattavuus#
 
-**This is bold**
-__This is bold also__
+##poetry run invoke coverage-report## >> Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov")
 
-_you **can** combine them too_
 
-Unordered Lists
-* Item 1
-* Item 2
- * Item 2a
- * Item 2b
-
-Ordered Lists
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-
-Images
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-Links
-http://github.com - automatic!
-[GitHub(http://github.com)
-
-Blockquotes
-As West said:
-> We're living the future so
-> the present is our past.
-
-Inline code
-I think you should use an
-'<addr>' element here instead.
-
-*****
-GitHub Flavored Markdown is somewhat different.
