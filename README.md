@@ -1,6 +1,7 @@
 <h1> Ohjelmistotekniikka, harjoitustyö (periodi 4, kevät 2021)
 
-<h2> Status
+<h2> Status <h2>
+
 
 Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa käyttäjänimen ja salasanan niille avautuvaan ikkunaan. Ikkuna tulee sulkea oikeasta yläkulmasta, jolloin ohjelma suorittaa lisäyksen.
 
