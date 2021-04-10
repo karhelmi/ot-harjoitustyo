@@ -10,5 +10,5 @@
 |1.4.    |  7    | Koodin suunnittelu ja aloittaminen, tkinteriin tutustuminen ja pajassa käynti|
 |6.4.    |  7    | Koodin rakentamista ja opettelua (vaikea saada eri kerroksia) |
 |8.4.    |  4.5    | Koodin rakentaminen jatkuu ja paja. Create new user toimii läpi! |
-|9.4.    |  x    | Koodin tarkentamista, invoke-, unittest- ja coverage-toimintojen lisäämistä |
-|Yhteensä|  24.5  | |
+|9.4.    |  3    | Koodin tarkentamista, invoke-, unittest- ja coverage-toimintojen lisäämistä |
+|Yhteensä|  27  | |
