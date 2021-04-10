@@ -9,7 +9,7 @@ Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa
 Olen tehnyt tämän ohjelman Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
 Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
 
-Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lisätä omalla "sivustollaan" vaatekappale- tai tarvikekohtaista tietoa. Tavoitteena on myös rakentaa erinäisiä toimintoja lisätyille tiedoille.
+Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lisätä omalla "sivustollaan" vaatekappale- tai tarvikekohtaista tietoa. Tavoitteena on myös rakentaa erinäisiä toimintoja lisätyille tiedoille. Lisätietoja löydät esimerkiksi Vaatimusmäärittely-dokumentista (linkki alla).
 
 ## Dokumentaatio
   
@@ -25,16 +25,22 @@ Ne sisältävät ainakin:
 * coverage
 * coverage-report
 
-### Suorittaminen ja käynnistäminen
+### Suorittaminen ja käynnistäminen komentoriviltä
 
 Ohjelma käynnistyy komennolla
 
-poetry run invoke start
+#### poetry run invoke start ####
 
 ### Testaus
 
-poetry run invoke test
+Ohjelman toimivuutta voi testata komennolla
+
+#### poetry run invoke test ####
 
 ### Testikattavuus
-  
-poetry run invoke coverage-report >> Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov")
+
+Testikattavuusraportin saa komennolla
+
+#### poetry run invoke coverage-report####
+
+>> Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov"
