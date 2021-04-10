@@ -27,14 +27,14 @@ Ne sisältävät ainakin:
 
 ### 1. Suorittaminen ja käynnistäminen komentoriviltä
 
-Ohjelma käynnistyy komennolla: ## poetry run invoke start ##
+Ohjelma käynnistyy komennolla: **poetry run invoke start**
 
-### 1. Testaus
+### 2. Testaus
 
-Ohjelman toimivuutta voi testata komennolla: ## poetry run invoke test ##
+Ohjelman toimivuutta voi testata komennolla: **poetry run invoke test**
 
-### 1. Testikattavuus
+### 3. Testikattavuus
 
-Testikattavuusraportin saa komennolla: ## poetry run invoke coverage-report ##
+Testikattavuusraportin saa komennolla: **poetry run invoke coverage-report**
 
 Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov". 
