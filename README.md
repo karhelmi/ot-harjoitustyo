@@ -25,7 +25,7 @@ Ne sisältävät ainakin:
 * coverage
 * coverage-report
 
-### 1. Suorittaminen ja käynnistäminen komentoriviltä
+### 1. Suorittaminen ja käynnistäminen
 
 Ohjelma käynnistyy komennolla: **poetry run invoke start**
 
