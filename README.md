@@ -16,7 +16,7 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 * [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (linkki harjoitustyön alustavaan määrittelydokumenttiin)
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
-## Komentorivitoiminnot ohjelmalle:
+## Komentorivitoiminnot ohjelmalle
   
 Invoke-työkalu on otettu käyttöön. Voit varmistaa Invoken avulla käytössä olevat komennot komennolla "poetry run invoke --list".
 Ne sisältävät ainakin:
@@ -25,22 +25,22 @@ Ne sisältävät ainakin:
 * coverage
 * coverage-report
 
-### Suorittaminen ja käynnistäminen komentoriviltä
+### 1. Suorittaminen ja käynnistäminen komentoriviltä
 
 Ohjelma käynnistyy komennolla
 
 #### poetry run invoke start ####
 
-### Testaus
+#### 1. Testaus
 
 Ohjelman toimivuutta voi testata komennolla
 
 #### poetry run invoke test ####
 
-### Testikattavuus
+#### 1. Testikattavuus
 
 Testikattavuusraportin saa komennolla
 
-#### poetry run invoke coverage-report####
+#### poetry run invoke coverage-report ####
 
->> Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov"
+Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov". 
