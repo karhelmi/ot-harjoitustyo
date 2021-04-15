@@ -25,16 +25,18 @@ Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), i
 ### Kirjautumisen jälkeen
 
 Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät lisätiedot, jotka sisältävät ainakin seuraavat tiedot:
-* suosikki (x, jos suosikki)
 * tyyppi (vaate, kengät, tavara...)
-* sisä/ulko(käyttöön)
 * koko
 * merkki
 * väri
 * sukupuoli (T, P, unisex)
+* pesty (kyllä, ei, n.a.)
+
+Mahdollisesti myöhemmin laajennetaan vielä seuraavilla tiedoilla:
+* suosikki (x, jos suosikki)
+* sisä/ulko(käyttöön)
 * kunto (kuin uusi, hyvä, tyydyttävä, rikki)
 * kuva(jos mahdollista)
-* pesty (kyllä, ei, n.a.)
 * huomioitavaa
 
 Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
