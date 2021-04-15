@@ -25,7 +25,8 @@ Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), i
 ### Kirjautumisen jälkeen
 
 Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät lisätiedot, jotka sisältävät ainakin seuraavat tiedot:
-* tyyppi (vaate, kengät, tavara...)
+* tyyppi (vaate, kengät, tarvike)
+* kuvaus (haalari, housut, paita jne.)
 * koko
 * merkki
 * väri
