@@ -22,9 +22,13 @@ Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), i
 
 *Normaalikäyttäjä* voi kirjautua sisään omaan rekisteriinsä käyttäjätunnuksen ja salasanan avulla. Jos hänellä ei vielä ole käyttäjätunnuksia, hän voi mennä luomaan uuden käyttäjätunnuksen ja salasanan, jonka jälkeen hän voi kirjautua palveluun.
 
+Toiminnallisuudet:
+* Käyttäjä voi luoda uuden tunnuksen. #TEHTY
+* Käyttäjä voi kirjautua sisään. #TEHTY
+
 ### Kirjautumisen jälkeen
 
-Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät lisätiedot, jotka sisältävät ainakin seuraavat tiedot:
+Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät tiedot, jotka sisältävät ainakin seuraavat tiedot:
 * tyyppi (vaate, kengät, tarvike)
 * kuvaus (haalari, housut, paita jne.)
 * koko
@@ -40,8 +44,10 @@ Mahdollisesti myöhemmin laajennetaan vielä seuraavilla tiedoilla:
 * kuva(jos mahdollista)
 * huomioitavaa
 
-Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen).
-Käyttäjä voi kirjautua ulos (log out) sovelluksesta.
+Toiminnallisuudet:
+* Käyttäjä näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet. #EI TEHTY
+* Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen). #TEHTY
+* Käyttäjä voi kirjautua ulos (log out) sovelluksesta. #TEHTY
 
 ## Toimintaympäristön rajoitteet
 
