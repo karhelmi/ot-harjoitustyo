@@ -31,12 +31,12 @@ Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee 
 * merkki
 * väri
 * sukupuoli (T, P, unisex)
-* pesty (kyllä, ei, n.a.)
 
 Mahdollisesti myöhemmin laajennetaan vielä seuraavilla tiedoilla:
 * suosikki (x, jos suosikki)
 * sisä/ulko(käyttöön)
 * kunto (kuin uusi, hyvä, tyydyttävä, rikki)
+* pesty (kyllä, ei, n.a.)
 * kuva(jos mahdollista)
 * huomioitavaa
 
