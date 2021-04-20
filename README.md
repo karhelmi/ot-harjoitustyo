@@ -2,11 +2,15 @@
 
 ## Status
 
-Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa käyttäjänimen ja salasanan niille avautuvaan ikkunaan. Ikkuna tulee sulkea oikeasta yläkulmasta, jolloin ohjelma suorittaa lisäyksen.
+Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa käyttäjänimen ja salasanan niille avautuvaan ikkunaan. Tämän jälkeen käyttäjä voi kirjautua sisään, jonka jälkeen hän voi lisätä tarviketietoja sekä kirjautua ulos. Tämän jälkeen hän voi kirjautua uudelleen sisään.
+
+## Huomioitavaa
+
+Repositorion data-hakemisto ei ole ylimääräinen, koska tietokanta luodaan tähän kansioon. (Viikon 3 palautteessa se oli määritetty "ylimääräiseksi tavaraksi".) Projektin testikattavuusraportinkin pitäisi nyt onnistua mielestäni. Omalla koneellani kaikki toimii kyllä.
 
 ## Yleistä
   
-Olen tehnyt tämän ohjelman Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
+Olen tekemässä tätä ohjelmaa Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
 Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
 
 Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lisätä omalla "sivustollaan" vaatekappale- tai tarvikekohtaista tietoa. Tavoitteena on myös rakentaa erinäisiä toimintoja lisätyille tiedoille. Lisätietoja löydät esimerkiksi Vaatimusmäärittely-dokumentista (linkki alla).
@@ -41,3 +45,8 @@ Ohjelman toimivuutta voi testata komennolla: **poetry run invoke test**
 Testikattavuusraportin saa komennolla: **poetry run invoke coverage-report**
 
 Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov". 
+
+### 4. Pylint
+Koodin laadun staattisen analyysin voi suorittaa komennolla: **poetry run invoke lint**
+
+Analyysissa käytettävät laadun tarkistukset on määritetty tiedostossa .pylintrc
