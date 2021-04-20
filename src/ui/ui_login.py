@@ -1,19 +1,19 @@
-from tkinter import Tk, ttk, StringVar, constants, font
+from tkinter import Tk, ttk, StringVar, constants
 from services.app_service import app_service
 
 
-class CreateNewUserUI:
-    def __init__(self, root, act_show_login_view):
+class LoginUI:
+    def __init__(self, root, act_show_item_view, act_show_create_user_view):
         self._root = root
-        # self.act_create_user = act_create_user EI PÄÄSE SUORAAN VAATETAULUKKOON
-        self.act_show_login_view = act_show_login_view
+        self.act_show_item_view = act_show_item_view
+        self.act_show_create_user_view = act_show_create_user_view
         self.frame = None
         self.username_entry = None
         self.password_entry = None
         self.error_message = None
         self.error_label = None
 
-        self.create_new_user_ui()
+        self.login_ui()
 
     def pack(self):
         self.frame.pack(fill=constants.X)
@@ -21,7 +21,7 @@ class CreateNewUserUI:
     def destroy(self):
         self.frame.destroy()
 
-    def create_new_user_ui(self):
+    def login_ui(self):
         self.frame = ttk.Frame(master=self._root)
 
         self.error_message = StringVar(self.frame)
@@ -29,8 +29,7 @@ class CreateNewUserUI:
             master=self.frame, textvariable=self.error_message)
         self.error_label.grid(row=3, column=0, padx=5, pady=5)
 
-        heading_label = ttk.Label(
-            master=self.frame, text="Luo uusi käyttäjätunnus ja salasana")
+        heading_label = ttk.Label(master=self.frame, text="Kirjaudu sisään")
         heading_label.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
 
         username_label = ttk.Label(master=self.frame, text="Käyttäjätunnus:")
@@ -47,34 +46,31 @@ class CreateNewUserUI:
         self.password_entry.grid(row=2, column=1, sticky=(
             constants.E, constants.W), padx=5, pady=5)
 
+        button_login = ttk.Button(
+            master=self.frame, text="Kirjaudu sisään", command=self.handle_login_button_click)
+        button_login.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
+
         button_create = ttk.Button(
-            master=self.frame, text="Luo tunnus", command=self.handle_button_click)
-        button_create.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
+            master=self.frame, text="Luo uusi tunnus", command=self.handle_create_button_click)
+        button_create.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
 
         self.frame.grid_columnconfigure(0, weight=1, minsize=500)
-
         self.hide_error()
 
-    def handle_button_click(self):
+    def handle_login_button_click(self):
         username_str = self.username_entry.get()
         password_str = self.password_entry.get()
-        password_star = len(password_str) * "*"
-
-        if len(username_str) == 0 or len(password_str) == 0:
-            self.show_error_message(
-                "Käyttäjänimi tai salasana ei voi olla tyhjä.")
-            return
 
         try:
-            app_service.create_new_user_command(
-                username_str, password_str)
-            print(  # tämä pois myöhemmin
-                f"Käyttäjätunnus {username_str} ja salasana {password_star} luotu onnistuneesti.")
-            self.act_show_login_view()
+            app_service.login_command(username_str, password_str)
+            self.act_show_item_view()  # Pitää oikeasti mennä Item-näkymään TOIMII!!! :)
 
         except ValueError:
             self.show_error_message(
-                f"Käyttäjätunnus {username_str} on jo olemassa. Valitse toinen käyttäjätunnus.")
+                "Väärä käyttäjätunnus tai salasana. Yritä uudelleen.")
+
+    def handle_create_button_click(self):
+        self.act_show_create_user_view()  # TOIMII!!!
 
     def show_error_message(self, message):
         self.error_message.set(message)
@@ -82,5 +78,3 @@ class CreateNewUserUI:
 
     def hide_error(self):
         self.error_label.grid_remove()
-
-# Lukee asiat TkInter-taulusta: Lisää nappiin command=self.handle_button_click tai vastaava metodi.

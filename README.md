@@ -15,15 +15,18 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
   
 * [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (linkki harjoitustyön alustavaan määrittelydokumenttiin)
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+* [Luokkakaavio ohjelman rakenteesta]((https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ## Komentorivitoiminnot ohjelmalle
   
 Invoke-työkalu on otettu käyttöön. Voit varmistaa Invoken avulla käytössä olevat komennot komennolla "poetry run invoke --list".
 Ne sisältävät ainakin:
-* start
-* test
-* coverage
-* coverage-report
+* start (suorittaa / aloittaa ohjelman)
+* test (suorittaa koodin automaattisen testit)
+* coverage (kerää testikattavuuden "pytest src" -komennon suorittamista testeistä)
+* coverage-report (luo graafisen testikattavuusraportin tiedostoon index.html htmlcov-kansioon)
+* lint (suorittaa koodin laadun staattisen analyysin)
+* format (formatoi src-kansion koodin PEP8 -tyyliohjeiden mukaisesti)
 
 ### 1. Suorittaminen ja käynnistäminen
 

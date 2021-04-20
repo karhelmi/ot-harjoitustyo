@@ -8,11 +8,15 @@ def drop_tables(connection):
         drop table if exists users;
     ''')
 
+    cursor.execute('''
+        drop table if exists items;
+    ''')
+
     connection.commit()
 
 
 def create_tables(connection):
-    cursor = connection.cursor() #"yhteys" tietokantaan
+    cursor = connection.cursor()  # "yhteys" tietokantaan
 
     cursor.execute('''
         CREATE TABLE users (
@@ -22,7 +26,19 @@ def create_tables(connection):
         );
     ''')
 
-    connection.commit() #suorittaa, mitä olen määrännyt yllä.
+    cursor.execute('''
+        CREATE TABLE items (
+            id text primary key,
+            type text,
+            description text,
+            size text,
+            brand text,
+            color text,
+            sex text
+        );
+    ''')
+
+    connection.commit()  # suorittaa, mitä olen määrännyt yllä.
 
 
 def initialize_database():
