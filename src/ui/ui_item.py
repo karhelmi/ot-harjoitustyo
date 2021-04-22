@@ -6,6 +6,7 @@ class ItemUI:
     def __init__(self, root, act_show_logout_view):
         self._root = root
         self.act_show_logout_view = act_show_logout_view
+        #self.act_show_item_list_view = act_show_item_list_view
         self.frame = None
         self.error_message = None
         self.error_label = None
@@ -33,12 +34,12 @@ class ItemUI:
         self.error_message = StringVar(self.frame)
         self.error_label = ttk.Label(
             master=self.frame, textvariable=self.error_message)
-        self.error_label.grid(row=8, column=0, padx=5, pady=5)
+        self.error_label.grid(row=8, column=0, columnspan=2, padx=5, pady=5)
 
         self.info_message = StringVar(self.frame)
         self.info_label = ttk.Label(
             master=self.frame, textvariable=self.info_message)
-        self.info_label.grid(row=8, column=0, padx=5, pady=5)
+        self.info_label.grid(row=8, column=0, columnspan=2, padx=5, pady=5)
 
         heading_label = ttk.Label(
             master=self.frame, text="Lisää vaate, kengät tai tarvike")
@@ -100,7 +101,12 @@ class ItemUI:
             master=self.frame, text="Kirjaudu ulos", command=self.handle_logout_button_click)
         button_logout.grid(row=9, column=0, columnspan=2, padx=5, pady=5)
 
-        self.frame.grid_columnconfigure(0, weight=1, minsize=2000)
+        #button_item_list = ttk.Button(
+         #   master=self.frame, text="Siirry listanäkymääsi", command=self.handle_add_item_button_click)
+        #button_item_list.grid(row=9, column=4, columnspan=2, padx=5, pady=5)
+
+
+        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
 
         self.hide_error()
 
@@ -134,7 +140,11 @@ class ItemUI:
     def handle_logout_button_click(self):
         self.act_show_logout_view()
 
+    #def handle_item_list_button_click(self):
+     #   self.act_show_item_list_view()
+
     def show_error_message(self, message):
+        self.hide_info_message()
         self.error_message.set(message)
         self.error_label.grid()
 

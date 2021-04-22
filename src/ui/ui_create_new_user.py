@@ -27,7 +27,13 @@ class CreateNewUserUI:
         self.error_message = StringVar(self.frame)
         self.error_label = ttk.Label(
             master=self.frame, textvariable=self.error_message)
-        self.error_label.grid(row=3, column=0, padx=5, pady=5)
+        self.error_label.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
+
+        self.info_message = StringVar(self.frame)
+        self.info_label = ttk.Label(
+            master=self.frame, textvariable=self.info_message)
+        self.info_label.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
+
 
         heading_label = ttk.Label(
             master=self.frame, text="Luo uusi käyttäjätunnus ja salasana")
@@ -51,7 +57,12 @@ class CreateNewUserUI:
             master=self.frame, text="Luo tunnus", command=self.handle_button_click)
         button_create.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
 
-        self.frame.grid_columnconfigure(0, weight=1, minsize=500)
+        button_move_to_login = ttk.Button(
+            master=self.frame, text="Siirry kirjautumaan sisään", command=self.handle_login_view_button_click)
+        button_move_to_login.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
+
+        
+        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
 
         self.hide_error()
 
@@ -68,13 +79,15 @@ class CreateNewUserUI:
         try:
             app_service.create_new_user_command(
                 username_str, password_str)
-            print(  # tämä pois myöhemmin
-                f"Käyttäjätunnus {username_str} ja salasana {password_star} luotu onnistuneesti.")
-            self.act_show_login_view()
+            self.show_info_message(f"Käyttäjätunnus {username_str} ja salasana {password_star} luotu onnistuneesti. Siirry kirjautumaan sisään.")
+            #self.act_show_login_view()
 
         except ValueError:
             self.show_error_message(
                 f"Käyttäjätunnus {username_str} on jo olemassa. Valitse toinen käyttäjätunnus.")
+
+    def handle_login_view_button_click(self):
+        self.act_show_login_view()
 
     def show_error_message(self, message):
         self.error_message.set(message)
@@ -82,5 +95,13 @@ class CreateNewUserUI:
 
     def hide_error(self):
         self.error_label.grid_remove()
+
+    def show_info_message(self, info_message):
+        self.hide_error()
+        self.info_message.set(info_message)
+        self.info_label.grid()
+
+    def hide_info_message(self):
+        self.info_label.grid_remove()
 
 # Lukee asiat TkInter-taulusta: Lisää nappiin command=self.handle_button_click tai vastaava metodi.

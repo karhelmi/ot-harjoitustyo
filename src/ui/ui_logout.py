@@ -31,7 +31,7 @@ class LogoutUI:
             master=self.frame, text="Siirry sisäänkirjautumissivulle", command=self.handle_button_click)
         button_move_login.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
 
-        self.frame.grid_columnconfigure(0, weight=1, minsize=500)
+        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
 
     def handle_button_click(self):
         self.act_show_login_view()

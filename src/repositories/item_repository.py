@@ -23,17 +23,13 @@ class ItemRepository:
 
         return item
 
-    def find_all_items(self):
+    def retrieve_items_from_database(self):
         cursor = self.connection.cursor()
 
         all_items_table = cursor.execute("SELECT * FROM  items").fetchall()
 
-        print("Lista luoduista vaatteista, kengistä ja tarvikkeista")
-
-        for row in all_items_table:
-            print(row["type"], row["description"], row["size"],
-                  row["brand"], row["color"], row["sex"])
-
+        return all_items_table
+       
     def find_by_item_type(self, typex):
         cursor = self.connection.cursor()
 

@@ -40,6 +40,11 @@ class AppService:
 
         return item
 
+    def retrieve_items_command(self):
+        all_items_table = self.item_repository.retrieve_items_from_database()
+
+        return all_items_table
+
     def logout_command(self):
         self.user = None
 

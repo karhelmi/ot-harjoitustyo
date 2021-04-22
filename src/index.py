@@ -8,7 +8,7 @@ from database_initialize import initialize_database
 
 def main():
 
-    initialize_database()
+    #initialize_database()
 
     window = Tk()
     window.title("Vaate- ja tarvikerekisteri")

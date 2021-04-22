@@ -54,7 +54,7 @@ class LoginUI:
             master=self.frame, text="Luo uusi tunnus", command=self.handle_create_button_click)
         button_create.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
 
-        self.frame.grid_columnconfigure(0, weight=1, minsize=500)
+        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
         self.hide_error()
 
     def handle_login_button_click(self):
