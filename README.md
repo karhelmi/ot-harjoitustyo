@@ -2,14 +2,14 @@
 
 ## Status
 
-Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa käyttäjänimen ja salasanan niille avautuvaan ikkunaan. Tämän jälkeen käyttäjä voi kirjautua sisään, jonka jälkeen hän voi lisätä tarviketietoja sekä kirjautua ulos. Tämän jälkeen hän voi kirjautua uudelleen sisään.
+Ohjelma on työn alla. Käyttäjä voi tällä hetkellä lisätä uuden käyttäjätunnuksen, kirjautua sisään, tarkastella tarvikelistaa, lisätä uusia tarvikkeita listaan sekä kirjautua ulos. Tämän jälkeen käyttäjä voi halutessaan kirjautua takaisin sisään jne.
 
 ## Huomioitavaa
 
 Repositorion data-hakemisto ei ole ylimääräinen, koska tietokanta luodaan tähän kansioon. (Viikon 3 palautteessa se oli määritetty "ylimääräiseksi tavaraksi".) Projektin testikattavuusraportinkin pitäisi nyt onnistua mielestäni. Omalla koneellani kaikki toimii kyllä.
 
 ## Python-versio
-Sinulla tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii koneellasi.
+Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
 
 ## Yleistä
   
