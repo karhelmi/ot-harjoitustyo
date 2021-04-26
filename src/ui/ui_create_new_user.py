@@ -5,7 +5,6 @@ from services.app_service import app_service
 class CreateNewUserUI:
     def __init__(self, root, act_show_login_view):
         self._root = root
-        # self.act_create_user = act_create_user EI PÄÄSE SUORAAN VAATETAULUKKOON
         self.act_show_login_view = act_show_login_view
         self.frame = None
         self.username_entry = None
@@ -34,7 +33,6 @@ class CreateNewUserUI:
             master=self.frame, textvariable=self.info_message)
         self.info_label.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
 
-
         heading_label = ttk.Label(
             master=self.frame, text="Luo uusi käyttäjätunnus ja salasana")
         heading_label.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
@@ -59,9 +57,9 @@ class CreateNewUserUI:
 
         button_move_to_login = ttk.Button(
             master=self.frame, text="Siirry kirjautumaan sisään", command=self.handle_login_view_button_click)
-        button_move_to_login.grid(row=6, column=0, columnspan=2, padx=5, pady=5)
+        button_move_to_login.grid(
+            row=6, column=0, columnspan=2, padx=5, pady=5)
 
-        
         self.frame.grid_columnconfigure(1, weight=1, minsize=500)
 
         self.hide_error()
@@ -79,8 +77,8 @@ class CreateNewUserUI:
         try:
             app_service.create_new_user_command(
                 username_str, password_str)
-            self.show_info_message(f"Käyttäjätunnus {username_str} ja salasana {password_star} luotu onnistuneesti. Siirry kirjautumaan sisään.")
-            #self.act_show_login_view()
+            self.show_info_message(
+                f"Käyttäjätunnus {username_str} ja salasana {password_star} luotu onnistuneesti. Siirry kirjautumaan sisään.")
 
         except ValueError:
             self.show_error_message(

@@ -20,7 +20,7 @@ class LogoutUI:
         self.frame = ttk.Frame(master=self._root)
 
         label1 = ttk.Label(master=self.frame,
-                           text="Kirjauduit ulos palvelusta")
+                           text="Hei hei ja kiitos käynnistä! Kirjauduit ulos palvelusta")
         label1.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
 
         label2 = ttk.Label(

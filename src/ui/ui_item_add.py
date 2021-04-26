@@ -2,11 +2,11 @@ from tkinter import Tk, ttk, StringVar, constants, font
 from services.app_service import app_service
 
 
-class ItemUI:
-    def __init__(self, root, act_show_logout_view):
+class ItemAddUI:
+    def __init__(self, root, act_show_logout_view, act_show_item_list_view):
         self._root = root
         self.act_show_logout_view = act_show_logout_view
-        #self.act_show_item_list_view = act_show_item_list_view
+        self.act_show_item_list_view = act_show_item_list_view
         self.frame = None
         self.error_message = None
         self.error_label = None
@@ -20,7 +20,7 @@ class ItemUI:
         self.color5_entry = None
         self.sex6_entry = None
 
-        self.create_item_ui()
+        self.create_item_add_ui()
 
     def pack(self):
         self.frame.pack(fill=constants.X)
@@ -28,7 +28,7 @@ class ItemUI:
     def destroy(self):
         self.frame.destroy()
 
-    def create_item_ui(self):
+    def create_item_add_ui(self):
         self.frame = ttk.Frame(master=self._root)
 
         self.error_message = StringVar(self.frame)
@@ -99,12 +99,11 @@ class ItemUI:
 
         button_logout = ttk.Button(
             master=self.frame, text="Kirjaudu ulos", command=self.handle_logout_button_click)
-        button_logout.grid(row=9, column=0, columnspan=2, padx=5, pady=5)
+        button_logout.grid(row=9, column=4, columnspan=2, padx=5, pady=5)
 
-        #button_item_list = ttk.Button(
-         #   master=self.frame, text="Siirry listanäkymääsi", command=self.handle_add_item_button_click)
-        #button_item_list.grid(row=9, column=4, columnspan=2, padx=5, pady=5)
-
+        button_item_list = ttk.Button(
+            master=self.frame, text="Siirry listanäkymääsi", command=self.handle_item_list_button_click)
+        button_item_list.grid(row=9, column=0, columnspan=2, padx=5, pady=5)
 
         self.frame.grid_columnconfigure(1, weight=1, minsize=500)
 
@@ -140,8 +139,8 @@ class ItemUI:
     def handle_logout_button_click(self):
         self.act_show_logout_view()
 
-    #def handle_item_list_button_click(self):
-     #   self.act_show_item_list_view()
+    def handle_item_list_button_click(self):
+        self.act_show_item_list_view()
 
     def show_error_message(self, message):
         self.hide_info_message()

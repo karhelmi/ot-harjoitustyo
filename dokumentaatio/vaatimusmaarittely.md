@@ -45,9 +45,10 @@ Mahdollisesti myöhemmin laajennetaan vielä seuraavilla tiedoilla:
 * huomioitavaa
 
 Toiminnallisuudet:
-* Käyttäjä näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet. #EI TEHTY
-* Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen). #TEHTY
-* Käyttäjä voi kirjautua ulos (log out) sovelluksesta. #TEHTY
+* Käyttäjä näkee sivustolle lisäämänsä vaatteet ja tarvikkeet. #TEHTY VKO 5
+* Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen). #TEHTY VKO 4
+* Käyttäjä voi kirjautua ulos (log out) sovelluksesta. #TEHTY VKO 4
+* Käyttäjä voi siirtyä kaikkien ikkunoiden välillä. #TEHTY VKO 5
 
 ## Toimintaympäristön rajoitteet
 

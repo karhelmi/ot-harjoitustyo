@@ -3,9 +3,9 @@ from services.app_service import app_service
 
 
 class LoginUI:
-    def __init__(self, root, act_show_item_view, act_show_create_user_view):
+    def __init__(self, root, act_show_item_list_view, act_show_create_user_view):
         self._root = root
-        self.act_show_item_view = act_show_item_view
+        self.act_show_item_list_view = act_show_item_list_view
         self.act_show_create_user_view = act_show_create_user_view
         self.frame = None
         self.username_entry = None
@@ -27,7 +27,7 @@ class LoginUI:
         self.error_message = StringVar(self.frame)
         self.error_label = ttk.Label(
             master=self.frame, textvariable=self.error_message)
-        self.error_label.grid(row=3, column=0, padx=5, pady=5)
+        self.error_label.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
 
         heading_label = ttk.Label(master=self.frame, text="Kirjaudu sisään")
         heading_label.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
@@ -63,14 +63,14 @@ class LoginUI:
 
         try:
             app_service.login_command(username_str, password_str)
-            self.act_show_item_view()  # Pitää oikeasti mennä Item-näkymään TOIMII!!! :)
+            self.act_show_item_list_view()
 
         except ValueError:
             self.show_error_message(
                 "Väärä käyttäjätunnus tai salasana. Yritä uudelleen.")
 
     def handle_create_button_click(self):
-        self.act_show_create_user_view()  # TOIMII!!!
+        self.act_show_create_user_view()
 
     def show_error_message(self, message):
         self.error_message.set(message)

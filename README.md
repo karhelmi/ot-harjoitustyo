@@ -19,7 +19,15 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
   
 * [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (linkki harjoitustyön alustavaan määrittelydokumenttiin)
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
-* [Luokkakaavio ohjelman rakenteesta](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+* [Luokkakaavio ja sekvenssikaavioita ohjelman rakenteesta](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+## RELEASE-linkki
+
+## Asennusohjeet Releasea varten
+1. Asenna riippuvuudet komennolla: **poetry install**
+2. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
+Huomaa, että sulkiessasi ohjelman (ruudun kulman ruksilla) tietokanta häviää eli suorittaessasi komennon 2. yllä, ohjelmaa alustaa tietokannan.
+Lisää komentorivitoimintoja on esitetty alla seuraavassa kohdassa.
 
 ## Komentorivitoiminnot ohjelmalle
   
@@ -30,7 +38,7 @@ Ne sisältävät ainakin:
 * coverage (kerää testikattavuuden "pytest src" -komennon suorittamista testeistä)
 * coverage-report (luo graafisen testikattavuusraportin tiedostoon index.html htmlcov-kansioon)
 * lint (suorittaa koodin laadun staattisen analyysin)
-* format (formatoi src-kansion koodin PEP8 -tyyliohjeiden mukaisesti)
+* format (formatoi src-kansion koodin PEP8-tyyliohjeiden mukaisesti)
 
 ### 1. Suorittaminen ja käynnistäminen
 
@@ -50,3 +58,6 @@ Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kans
 Koodin laadun staattisen analyysin voi suorittaa komennolla: **poetry run invoke lint**
 
 Analyysissa käytettävät laadun tarkistukset on määritetty tiedostossa .pylintrc
+
+### 5. PEP8-tyyliohjeiden soveltaminen koodin luettavuuden parantamiseksi
+Koodin muotoilun PEP8-tyyliohjeiden mukaiseksi voi suorittaa komennolla: **poetry run invoke format**

@@ -29,7 +29,7 @@ class ItemRepository:
         all_items_table = cursor.execute("SELECT * FROM  items").fetchall()
 
         return all_items_table
-       
+
     def find_by_item_type(self, typex):
         cursor = self.connection.cursor()
 
