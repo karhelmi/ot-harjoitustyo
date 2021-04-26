@@ -14,7 +14,8 @@
 |13.4.   |  4    | Koodin jatkamista. Mm. Login View luotu. |
 |15.4.   |  6    | Koodaus jatkuu, mm. Create item view luotu. Lisätestejä tehty. Luokkakaaviota piirretty.  Alan tajuamaan tätä logiikkaa.| 
 |16.4.   |  2    | Ikkunahyppely toimii Login, Create User, Add Item ja Logout view välillä!|
-|20.4.   |  1.5  | Initialize database lisätty indexiin. Ja testeihin lisätty myös oma tietokanta ymmärtääkseni conftestin avulla(?). Githubbaus ja viimeistely, viikon 4 palautus.|
+|20.4.   |  1.5  | Initialize database lisätty indexiin. Testeihin lisätty oma tietokanta conftestin avulla(?). Githubbaus ja viimeistely, viikon 4 palautus.|
 |22.4.   |  6    | Tarvikelistanäkymän luontia ja Treeviewhun tutustumista. Pajassa käynti. |
 |23.4.   |  4    | Tarvikelistanäkymän viimeistelyä ja ohjelmaan integrointi. Sekvenssikaavioiden teko. Dokumenttien päivitys. Releaseen tutustuminen.|
-|Yhteensä|  50.5 | |
+|26.4.   |  1,5  | Viimeistely, releasen tekeminen ja testaus|
+|Yhteensä|  52 | |
