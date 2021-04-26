@@ -17,5 +17,5 @@
 |20.4.   |  1.5  | Initialize database lisätty indexiin. Testeihin lisätty oma tietokanta conftestin avulla(?). Githubbaus ja viimeistely, viikon 4 palautus.|
 |22.4.   |  6    | Tarvikelistanäkymän luontia ja Treeviewhun tutustumista. Pajassa käynti. |
 |23.4.   |  4    | Tarvikelistanäkymän viimeistelyä ja ohjelmaan integrointi. Sekvenssikaavioiden teko. Dokumenttien päivitys. Releaseen tutustuminen.|
-|26.4.   |  1,5  | Viimeistely, releasen tekeminen ja testaus|
+|26.4.   |  1,5  | Viimeistely, releasen tekeminen ja testaus. Viikon 5 palautus.|
 |Yhteensä|  52 | |
