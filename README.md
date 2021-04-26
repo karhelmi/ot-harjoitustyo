@@ -8,6 +8,9 @@ Ohjelma on työn alla. Create new user -toiminto toimii, kun laittaja kirjoittaa
 
 Repositorion data-hakemisto ei ole ylimääräinen, koska tietokanta luodaan tähän kansioon. (Viikon 3 palautteessa se oli määritetty "ylimääräiseksi tavaraksi".) Projektin testikattavuusraportinkin pitäisi nyt onnistua mielestäni. Omalla koneellani kaikki toimii kyllä.
 
+## Python-versio
+Sinulla tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii koneellasi.
+
 ## Yleistä
   
 Olen tekemässä tätä ohjelmaa Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
@@ -21,12 +24,13 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 * [Luokkakaavio ja sekvenssikaavioita ohjelman rakenteesta](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-## RELEASE-linkki
+## Release-linkki
+[Tässä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5) on linkki ohjelman ensimmäiseen releaseen ("Viikon 5 ohjelmaversion release"). Lataa lähdekoodi koneellesi. Mene tämän jälkeen lataamasi lähdekoodin juurihakemistoon komentoriviltäsi, ja suorita seuraavassa kohdassa kerrotut asennusohjeet.
 
 ## Asennusohjeet Releasea varten
 1. Asenna riippuvuudet komennolla: **poetry install**
 2. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
-Huomaa, että sulkiessasi ohjelman (ruudun kulman ruksilla) tietokanta häviää eli suorittaessasi komennon 2. yllä, ohjelmaa alustaa tietokannan.
+Huomaa, että tällä hetkellä ohjelma alustaa tietokannan aina käynnistyksen yhteydessä. Tämä tarkoittaa, että sulkiessasi ohjelman (ruudun kulman ruksilla) tietokanta häviää eli suorittaessasi komennon "poetry run invoke start", ohjelmaa aina alustaa tietokannan.
 Lisää komentorivitoimintoja on esitetty alla seuraavassa kohdassa.
 
 ## Komentorivitoiminnot ohjelmalle
