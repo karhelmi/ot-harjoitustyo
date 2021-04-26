@@ -30,6 +30,7 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 ## Asennusohjeet Releasea varten
 1. Asenna riippuvuudet komennolla: **poetry install**
 2. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
+
 Huomaa, että tällä hetkellä ohjelma alustaa tietokannan aina käynnistyksen yhteydessä. Tämä tarkoittaa, että sulkiessasi ohjelman (ruudun kulman ruksilla) tietokanta häviää eli suorittaessasi komennon "poetry run invoke start", ohjelmaa aina alustaa tietokannan.
 Lisää komentorivitoimintoja on esitetty alla seuraavassa kohdassa.
 
