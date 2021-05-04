@@ -2,11 +2,7 @@
 
 ## Status
 
-Ohjelma on työn alla. Käyttäjä voi tällä hetkellä lisätä uuden käyttäjätunnuksen, kirjautua sisään, tarkastella tarvikelistaa, lisätä uusia tarvikkeita listaan sekä kirjautua ulos. Tämän jälkeen käyttäjä voi halutessaan kirjautua takaisin sisään jne.
-
-## Huomioitavaa
-
-Repositorion data-hakemisto ei ole ylimääräinen, koska tietokanta luodaan tähän kansioon. (Viikon 3 palautteessa se oli määritetty "ylimääräiseksi tavaraksi".) Projektin testikattavuusraportinkin pitäisi nyt onnistua mielestäni. Omalla koneellani kaikki toimii kyllä.
+Ohjelma on työn alla. Käyttäjä voi tällä hetkellä lisätä uuden käyttäjätunnuksen, kirjautua sisään, tarkastella omaa tarvikelistaa, tarkastella omalta tarvikelistalta vain tietyntyyppisiä tarvikkeita, lisätä uusia tarvikkeita listaan sekä kirjautua ulos. Tämän jälkeen käyttäjä voi halutessaan kirjautua takaisin sisään jne. Käyttäjiä voi olla useita, ja jokaisella on omat listansa.
 
 ## Python-versio
 Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
@@ -29,7 +25,8 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 Ohjelman viimeisin eli viikon 6 Release on saatavilla [täältä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko6).
 Lataa lähdekoodi koneellesi ja katso tämän jälkeen suoritettavat asennusohjeet seuraavan otsikon alta.
 
-Linkit aiempiin Releaseihin on listattu alla:
+Linkit aiempiin Releaseihin:
+
 [Viikon 5 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennusohjeet Releasea varten
