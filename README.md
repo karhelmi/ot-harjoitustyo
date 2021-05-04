@@ -59,20 +59,20 @@ Alusta ja luo ennen ohjelman käynnistämistä tietokanta komennolla: **poetry r
 
 Ohjelma käynnistyy komennolla: **poetry run invoke start**
 
-### 2. Testaus
+### 3. Testaus
 
 Ohjelman toimivuutta voi testata komennolla: **poetry run invoke test**
 
-### 3. Testikattavuus
+### 4. Testikattavuus
 
 Testikattavuusraportin saa komennolla: **poetry run invoke coverage-report**
 
 Testikattavuusraportti on nimeltään "index.html"-tiedosto juurihakemiston kansiossa "htmlcov". 
 
-### 4. Pylint
+### 5. Pylint
 Koodin laadun staattisen analyysin voi suorittaa komennolla: **poetry run invoke lint**
 
 Analyysissa käytettävät laadun tarkistukset on määritetty tiedostossa .pylintrc
 
-### 5. PEP8-tyyliohjeiden soveltaminen koodin luettavuuden parantamiseksi
+### 6. PEP8-tyyliohjeiden soveltaminen koodin luettavuuden parantamiseksi
 Koodin muotoilun PEP8-tyyliohjeiden mukaiseksi voi suorittaa komennolla: **poetry run invoke format**
