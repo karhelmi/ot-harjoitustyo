@@ -18,4 +18,8 @@
 |22.4.   |  6    | Tarvikelistanäkymän luontia ja Treeviewhun tutustumista ja sen kanssa taistelemista. Pajassa käynti. |
 |23.4.   |  4    | Tarvikelistanäkymän viimeistelyä ja ohjelmaan integrointi. Sekvenssikaavioiden teko. Dokumenttien päivitys. Releaseen tutustuminen.|
 |26.4.   |  1,5  | Viimeistely, releasen tekeminen ja testaus. Viikon 5 palautus.|
-|Yhteensä|  52 | |
+|27.4.   |  7    | Eri käyttäjien listat eriytetty. Tyyppitieto muutettu dropdown-valikoksi (paljon taistelua tuon kanssa). Lista voidaan valita näyttävän vain valitut tarvikkeet tyypin mukaan (dropdown-menu).|
+|29.4.   |  6    | Koodin laatua parannettu lyhentämällä yksittäisten metodien pituuksia. Testauksen kanssa työstöä. Docstringin aloitus.
+                   Alustavan arkkitehtuurikuvauksen tekoa. Käyttöohjeen laadinnan aloitus. | 
+|4.5.    |  3    | Lisätestien luominen. Config-tiedosto jne. tietokantojen eriyttäminen, niin että testit toimii hyvin nyt. Viimeistely. Viikon 6 palautus. |
+|Yhteensä|  68   | |

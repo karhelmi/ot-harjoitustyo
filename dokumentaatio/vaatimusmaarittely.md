@@ -49,6 +49,9 @@ Toiminnallisuudet:
 * Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen). #TEHTY VKO 4
 * Käyttäjä voi kirjautua ulos (log out) sovelluksesta. #TEHTY VKO 4
 * Käyttäjä voi siirtyä kaikkien ikkunoiden välillä. #TEHTY VKO 5
+* Käyttäjä näkee vain oman listansa eli ohjelmalla voi olla useita käyttäjiä. #TEHTY VKO 6
+* Käyttäjä voi lisätä ainoastaan 3 eri tyyppisiä tarvikkeita (vaate, kengät, tarvike) dropdown-valikon avulla. #TEHTY VKO 6
+* Käyttäjä voi valita, mitkä tiedot listanäkymässä näkyy tarviketyypin mukaan eli lisätty perushakutoiminto. #TEHTY VKO 6
 
 ## Toimintaympäristön rajoitteet
 
@@ -63,4 +66,3 @@ Kaikki sovelluksen tiedot talletetaan paikallisen koneen levylle.
 4. *Normaalikäyttäjä* voisi pitää kirjaa seuraavista hankinnoista eli mitä tulee hankkia ja milloin.
 5. *Normaalikäyttäjä* voisi nähdä yhteenvetotaulukossa kuinka monta vaatetta tai tarviketta hänellä on rekisterissä ja ehkä jaoteltuna tiettyihin osakokonaisuuksiin.
 6. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa vaatteet ja tarvikkeet, joista on kiinnostunut.
-7. Saatetaan laajentaa vielä esim. lasten huonekaluihin, rattaisiin jne.
