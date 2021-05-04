@@ -22,30 +22,39 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
   
 * [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (linkki harjoitustyön alustavaan määrittelydokumenttiin)
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
-* [Luokkakaavio ja sekvenssikaavioita ohjelman rakenteesta](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+* [Arkkitehtuuri-dokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+* [Käyttöohjeet](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohjeet.md)
 
 ## Release-linkki
 [Tässä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5) on linkki ohjelman ensimmäiseen releaseen ("Viikon 5 ohjelmaversion release"). Lataa lähdekoodi koneellesi. Mene tämän jälkeen lataamasi lähdekoodin juurihakemistoon komentoriviltäsi, ja suorita seuraavassa kohdassa kerrotut asennusohjeet.
 
 ## Asennusohjeet Releasea varten
-1. Asenna riippuvuudet komennolla: **poetry install**
-2. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
 
-Huomaa, että tällä hetkellä ohjelma alustaa tietokannan aina käynnistyksen yhteydessä. Tämä tarkoittaa, että sulkiessasi ohjelman (ruudun kulman ruksilla) tietokanta häviää eli suorittaessasi komennon "poetry run invoke start", ohjelmaa aina alustaa tietokannan.
-Lisää komentorivitoimintoja on esitetty alla seuraavassa kohdassa.
+Mene harjoitustyön juurivalikkoon "ot-harjoitustyö" ja suorita siellä seuraavat komennot:
+
+1. Asenna riippuvuudet komennolla: **poetry install**
+2. Alusta tietokanta komennolla: **poetry run invoke initialize** (tämä tarvitsee tehdä vain kerran, vaikka käyttäisi komentoa 3. uudelleen)
+3. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
+
+Lisää komentorivitoimintoja on esitetty alla seuraavassa kohdassa. Ohjelman käyttöohjeisiin on linkki yllä kohdassa "Dokumentaatio".
 
 ## Komentorivitoiminnot ohjelmalle
   
 Invoke-työkalu on otettu käyttöön. Voit varmistaa Invoken avulla käytössä olevat komennot komennolla "poetry run invoke --list".
 Ne sisältävät ainakin:
-* start (suorittaa / aloittaa ohjelman)
+* initialize (alustaa ja luo tietokannan)
+*  start (suorittaa / aloittaa ohjelman)
 * test (suorittaa koodin automaattisen testit)
 * coverage (kerää testikattavuuden "pytest src" -komennon suorittamista testeistä)
 * coverage-report (luo graafisen testikattavuusraportin tiedostoon index.html htmlcov-kansioon)
 * lint (suorittaa koodin laadun staattisen analyysin)
 * format (formatoi src-kansion koodin PEP8-tyyliohjeiden mukaisesti)
 
-### 1. Suorittaminen ja käynnistäminen
+### 1. Tietokannan alustaminen
+
+Alusta ja luo ennen ohjelman käynnistämistä tietokanta komennolla: **poetry run invoke initialize**
+
+### 2. Suorittaminen ja käynnistäminen
 
 Ohjelma käynnistyy komennolla: **poetry run invoke start**
 
