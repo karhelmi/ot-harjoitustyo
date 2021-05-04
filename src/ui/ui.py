@@ -36,19 +36,19 @@ class MasterUI:
 
         self.current_view.pack()
 
-    def show_item_add_view(self):
+    def show_item_add_view(self, username):
         self.hide_current_view()
 
         self.current_view = ItemAddUI(
-            self._root, self.show_logout_view, self.show_item_list_view)
+            self._root, self.show_logout_view, self.show_item_list_view, username)
 
         self.current_view.pack()
 
-    def show_item_list_view(self):
+    def show_item_list_view(self, username):
         self.hide_current_view()
 
         self.current_view = ItemListUI(
-            self._root, self.show_logout_view, self.show_item_add_view)
+            self._root, self.show_logout_view, self.show_item_add_view, username)
 
         self.current_view.pack()
 

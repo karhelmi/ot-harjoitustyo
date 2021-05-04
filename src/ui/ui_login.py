@@ -63,7 +63,7 @@ class LoginUI:
 
         try:
             app_service.login_command(username_str, password_str)
-            self.act_show_item_list_view()
+            self.act_show_item_list_view(username_str)
 
         except ValueError:
             self.show_error_message(

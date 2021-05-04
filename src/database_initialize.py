@@ -34,7 +34,7 @@ def create_tables(connection):
             size text,
             brand text,
             color text,
-            sex text
+            username text
         );
     ''')
 

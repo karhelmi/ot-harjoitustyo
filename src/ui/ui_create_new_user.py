@@ -37,6 +37,16 @@ class CreateNewUserUI:
             master=self.frame, text="Luo uusi käyttäjätunnus ja salasana")
         heading_label.grid(row=0, column=0, columnspan=2, padx=5, pady=5)
 
+        self.add_row_username_info()
+        self.add_row_password_info()
+
+        self.add_button_layout()
+
+        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
+
+        self.hide_error()
+
+    def add_row_username_info(self):
         username_label = ttk.Label(master=self.frame, text="Käyttäjätunnus:")
         username_label.grid(row=1, column=0, padx=5, pady=5)
 
@@ -44,6 +54,7 @@ class CreateNewUserUI:
         self.username_entry.grid(row=1, column=1, sticky=(
             constants.E, constants.W), padx=5, pady=5)
 
+    def add_row_password_info(self):
         password_label = ttk.Label(master=self.frame, text="Salasana:")
         password_label.grid(row=2, column=0, padx=5, pady=5)
 
@@ -51,8 +62,9 @@ class CreateNewUserUI:
         self.password_entry.grid(row=2, column=1, sticky=(
             constants.E, constants.W), padx=5, pady=5)
 
+    def add_button_layout(self):
         button_create = ttk.Button(
-            master=self.frame, text="Luo tunnus", command=self.handle_button_click)
+            master=self.frame, text="Luo tunnus", command=self.handle_create_user_button_click)
         button_create.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
 
         button_move_to_login = ttk.Button(
@@ -60,11 +72,7 @@ class CreateNewUserUI:
         button_move_to_login.grid(
             row=6, column=0, columnspan=2, padx=5, pady=5)
 
-        self.frame.grid_columnconfigure(1, weight=1, minsize=500)
-
-        self.hide_error()
-
-    def handle_button_click(self):
+    def handle_create_user_button_click(self):
         username_str = self.username_entry.get()
         password_str = self.password_entry.get()
         password_star = len(password_str) * "*"

@@ -7,8 +7,9 @@ from database_initialize import initialize_database
 
 
 def main():
-
-    initialize_database()
+    """Metodi, joka käynnistää ohjelman.
+    """
+    # initialize_database()
 
     window = Tk()
     window.title("Vaate- ja tarvikerekisteri")
@@ -20,9 +21,6 @@ def main():
     window.minsize(1000, 1000)
 
     window.mainloop()
-
-    #style = ttk.Style(window)
-    #style.configure("Treeview", rowcount=30)
 
 
 if __name__ == "__main__":
