@@ -26,11 +26,15 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 * [Käyttöohjeet](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohjeet.md)
 
 ## Release-linkki
-[Tässä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5) on linkki ohjelman ensimmäiseen releaseen ("Viikon 5 ohjelmaversion release"). Lataa lähdekoodi koneellesi. Mene tämän jälkeen lataamasi lähdekoodin juurihakemistoon komentoriviltäsi, ja suorita seuraavassa kohdassa kerrotut asennusohjeet.
+Ohjelman viimeisin eli viikon 6 Release on saatavilla [täältä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko6).
+Lataa lähdekoodi koneellesi ja katso tämän jälkeen suoritettavat asennusohjeet seuraavan otsikon alta.
+
+Linkit aiempiin Releaseihin on listattu alla:
+[Viikon 5 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennusohjeet Releasea varten
 
-Mene harjoitustyön juurivalikkoon "ot-harjoitustyö" ja suorita siellä seuraavat komennot:
+Mene lataamasi lähdekoodin juurihakemistoon "ot-harjoitustyö" komentoriviltäsi ja suorita siellä seuraavat komennot:
 
 1. Asenna riippuvuudet komennolla: **poetry install**
 2. Alusta tietokanta komennolla: **poetry run invoke initialize** (tämä tarvitsee tehdä vain kerran, vaikka käyttäisi komentoa 3. uudelleen)
