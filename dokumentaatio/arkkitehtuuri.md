@@ -1,6 +1,6 @@
-## Ohjelman arkkitehtuurikuvaus
+# Ohjelman arkkitehtuurikuvaus
 
-# Ohjelman rakenne
+## Ohjelman rakenne
 
 Ohjelmassa on kolme tasoa:
 * käyttöliittymätaso (ui) vastaa käyttöliittymälogiikasta ja käyttäjän syötteisiin reagoimisesta.
@@ -12,7 +12,7 @@ Ohjelman rakennetta esittävä kuvaus on esitetty alla.
 
 ![](./kuvat/ohjelman_rakenne.jpg)
 
-# Käyttöliittymä
+## Käyttöliittymä
 
 Käyttöliittymä on toteutettu Tkinterillä. Siinä on viisi eri näkymää:
 * Luo uusi käyttäjätunnus ja salasana
@@ -27,7 +27,7 @@ Näkymien välittäjänä toimii ui-luokka, jolla ei ole omaa erillistä näkym�
 Tarvikelistasi-näkymässä käyttäjä voi valita tarviketyypit (vaate, kengät, tarvike), jotka haluaa nähdä. Käyttäjä näkee
 luonnollisesti vain omat (omaa käyttäjätunnusta vastaavat) tarvikkeensa.
 
-# Palvelutaso eli sovelluslogiikka
+## Palvelutaso eli sovelluslogiikka
 
 Luokkakaavio esittää ohjelman yksityiskohtaisen sisällön (alla).
 
@@ -38,7 +38,7 @@ Käyttäjä- ja tarviketieto (User ja Item) siirtyy käyttäjältä käyttöliit
 tietokantatasoon tallennettavaksi.
 
 
-# Tietokantataso
+## Tietokantataso
 
 * Harjoitustyön sekvenssikaavioita
 
@@ -46,8 +46,10 @@ tietokantatasoon tallennettavaksi.
 
 ![](./kuvat/ot-harjoitustyo_sekvenssikaavio2.png)
 
-# Päätoiminnallisuudet
- 
-# Ohjelman rakenteeseen jääneet heikkoudet
+## Päätoiminnallisuudet
 
-Testaus tyhjentää tietokannan.
+TO BE ADDED
+
+## Ohjelman rakenteeseen jääneet heikkoudet
+
+Ohjelmasta ei voi vielä poistaa tarvikkeita.
