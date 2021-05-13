@@ -37,11 +37,11 @@ Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee 
 * koko (92, 25, 80cm)
 * merkki (Reima, Stokke)
 * väri (punainen, keltainen)
-* oman käyttäjätunnuksen
+* oma käyttäjätunnus
 
 Toiminnallisuudet:
 * Käyttäjä näkee sivustolle lisäämänsä tarvikkeet listanäkymässä.
-* Käyttäjä voi valita, mitkä tiedot listanäkymässä näkyy tarviketyypin mukaan eli lisätty perushakutoiminto.
+* Käyttäjä voi valita, mitkä tiedot listanäkymässä näkyy tarviketyypin mukaan eli perushakutoiminto.
 * Käyttäjä voi poistaa valitsemansa rivin tiedot listanäkymästään ja rekisteristään.
 * Käyttäjä voi lisätä uuden tarvikkeen (eli rivin tietoineen).
 * Käyttäjä voi valita dropdown-valikon avulla, onko lisättävä tarvike vaate, kengät vai muu tarvike.
