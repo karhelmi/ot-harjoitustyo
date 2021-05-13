@@ -8,7 +8,7 @@ Ohjelmaa on myös testattu manuaalisesti käyttämällä ohjelmaa monipuolisesti
 ## Automatisoidut testit (unittest)
 
 Automatisoidut testit voidaan suorittaa komentoriviltä komennolla **poetry run invoke test** ja 
-testauskattavuusraportin saa komennolla **poetry run coverage-report** (raportti ilmestyy htmlcov-kansioon).
+testauskattavuusraportin saa komennolla **poetry run invoke coverage-report** (raportti ilmestyy htmlcov-kansioon).
 
 Tähän liittyvät seuraavat tiedostot: pytest.ini, .env.test, .coverage, .coveragerc ja tests-kansion sisältämät tiedostot.
 Testeillä on käytössä oma tietokanta. Käyttöliittymään liittyvää koodia ei ole sisällytetty automatisoituihin testeihin (määritetty .coveragerc-tiedostossa).
