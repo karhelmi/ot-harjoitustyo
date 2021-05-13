@@ -22,4 +22,6 @@
 |29.4.   |  6    | Koodin laatua parannettu lyhentämällä yksittäisten metodien pituuksia. Testauksen kanssa työstöä. Docstringin aloitus. Alustavan arkkitehtuurikuvauksen tekoa. Käyttöohjeen laadinnan aloitus. | 
 |4.5.    |  3    | Lisätestien luominen. Config-tiedosto jne. tietokantojen eriyttäminen, niin että testit toimii hyvin nyt. Viimeistely. Viikon 6 palautus. |
 |11.5.   |  4    | Rivin poistamisen metodin lisäys. Dokumenttien ja kuvien päivittämistä loppupalautusta varten. |
-|Yhteensä|  72   | |
+|12.5.   |  1    | Testausdokumentin kirjoittamista. |
+|13.5.   |  4    | Dokumenttien viimeistelyä ja pieniä muutoksia koodiin.|
+|Yhteensä|  77   | |
