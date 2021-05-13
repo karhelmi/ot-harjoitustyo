@@ -29,6 +29,7 @@ Lataa lähdekoodi koneellesi ja katso tämän jälkeen suoritettavat asennusohje
 Linkit aiempiin Releaseihin:
 
 [Viikon 6 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko6)
+
 [Viikon 5 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennusohjeet Releasea varten
