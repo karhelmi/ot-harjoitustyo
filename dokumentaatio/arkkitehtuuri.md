@@ -27,12 +27,11 @@ Tarvikelistasi-näkymässä käyttäjä voi valita tarviketyypit (vaate, kengät
 
 ## Palvelutaso eli sovelluslogiikka
 
-Luokkakaavio esittää ohjelman yksityiskohtaisen sisällön (alla).
+Luokkakaavio esittää ohjelman yksityiskohtaisen sisällön (alla). Pääluokkien lisäksi siihen on sisällytetty muutama erillinen tärkeä metodi.
 
 ![](./kuvat/ot-harjoitustyo_luokkakaavio.jpg)
 
-Kaaviosta voi nähdä, kuinka Appservice-luokka asettuu käyttöliittymän ja tietokantatason väliin eriyttäen nämä toisistaan.
-Käyttäjä- ja tarviketieto (User ja Item) siirtyy käyttäjältä käyttöliittymän kautta ja palvelutason toimintojen avulla tietokantatasoon tallennettavaksi.
+Kaaviosta voi nähdä, kuinka AppService-luokka asettuu käyttöliittymän ja tietokantatason väliin eriyttäen nämä toisistaan. Käyttäjä- ja tarviketieto (User ja Item) siirtyy käyttäjältä käyttöliittymän kautta ja palvelutason toimintojen avulla tietokantatasoon tallennettavaksi.
 
 ## Tietokantataso eli tietojen pysyväistalletus
 
