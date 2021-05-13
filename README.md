@@ -20,7 +20,7 @@ Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 * [Arkkitehtuuridokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 * [Käyttöohjeet](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
-* [Testausdokumentti]((https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
+* [Testausdokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
 ## Release-linkki
 Ohjelman Release on saatavilla [täältä](UPDATE!).
