@@ -6,11 +6,9 @@ Ohjelman lopullisesta versiosta on muodostettu Release eikä ohjelmaa tulla kurs
 
 ## Yleistä
   
-Olen tehnyt ohjelman Helsingin yliopiston Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
-Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
+Olen tehnyt ohjelman Helsingin yliopiston Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
 
-Sovellus on lastentarvikerekisteri, jonka avulla käyttäjä voi pitää kirjaa lastentarvikekohtaisesta tiedosta omalla sivustollaan.
-Toki ohjelmaa voi käyttää myös aikuisten tarvikkeille, mutta se on suunniteltu erityisesti lapsiperheiden avuksi. Katso lisätietoja ohjelman toiminnoista Vaatimusmäärittely-dokumentista (linkki alla).
+Sovellus on lastentarvikerekisteri, jonka avulla käyttäjä voi pitää kirjaa lastentarvikekohtaisesta tiedosta omalla sivustollaan. Toki ohjelmaa voi käyttää myös aikuisten tarvikkeille, mutta se on suunniteltu erityisesti lapsiperheiden avuksi. Katso lisätietoja ohjelman toiminnoista Vaatimusmäärittely-dokumentista (linkki alla).
 
 ## Python-versio
 
@@ -18,9 +16,9 @@ Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
 
 ## Dokumentaatio
   
-* [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) (linkki harjoitustyön alustavaan määrittelydokumenttiin)
+* [Vaatimusmäärittely](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
-* [Arkkitehtuuri-dokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+* [Arkkitehtuuridokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 * [Käyttöohjeet](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 * [Testausdokumentti]((https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
