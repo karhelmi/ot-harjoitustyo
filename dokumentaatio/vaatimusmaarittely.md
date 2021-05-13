@@ -5,16 +5,19 @@
 >  Lasten kanssa elämä on yhtä välineurheilua. 
 >  Sovelluksen tarkoitus on helpottaa ja tehostaa tätä välineurheilua.
 
-Sovellus on lastenvaate- ja tarvikerekisteri. Sovelluksen avulla käyttäjä voi pitää kirjaa organisoidusti lasten vaatteista, kengistä ja välineistä (esim. sukset) ja niihin liittyvistä yksityiskohdista. Sovelluksen avulla käyttäjä voi etsiä haluamaansa lasten vaatteisiin ja tarvikkeisiin liittyvää tietoa helposti ja nopeasti.
+Sovellus on lastentarvikerekisteri. Sovelluksen avulla käyttäjä voi pitää kirjaa organisoidusti lasten vaatteista, kengistä ja muista tarvikkeista (amme, sukset jne.) ja niihin liittyvistä yksityiskohdista. 
+Sovelluksen avulla käyttäjä näkee lasten vaatteisiin, kenkiin ja muihin tarvikkeisiin liittyvät tiedot helposti ja nopeasti.
 
 ## Sovelluksen käyttäjät
 
-Sovelluksella on ensi vaiheessa yksi käyttäjärooli, joka on *normaalikäyttäjä*. 
+Sovelluksella on yksi käyttäjärooli, joka on *normaalikäyttäjä*. 
 
 ## Käyttöliittymäluonnos
 
-Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), ii) käyttäjätunnuksen luontinäkymä (harmaan laatikot) sekä iii) vaate/tavaralistanäkymä (vihreät laatikot). Oranssit laatikot kuvastavat funktioita, joista kaikki eivät ole alussa mukana/käytössä.
-![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_27.3.21.png)
+Ohjelmassa on viisi näkymää: i) Kirjaudu sisään, ii) Luo uusi käyttäjätunnus ja salasana, 
+iii) Tarvikelistasi, iv) Lisää tarvike ja v) Kirjauduit ulos. Näkymistä pääsee toisiin näkymiin painikkeilla  (pallot).
+
+![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_11.5.21.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -23,46 +26,38 @@ Alussa on kolme näkymää: i) Kirjautumisnäkymä (vaaleanpunaiset laatikot), i
 *Normaalikäyttäjä* voi kirjautua sisään omaan rekisteriinsä käyttäjätunnuksen ja salasanan avulla. Jos hänellä ei vielä ole käyttäjätunnuksia, hän voi mennä luomaan uuden käyttäjätunnuksen ja salasanan, jonka jälkeen hän voi kirjautua palveluun.
 
 Toiminnallisuudet:
-* Käyttäjä voi luoda uuden tunnuksen. #TEHTY
-* Käyttäjä voi kirjautua sisään. #TEHTY
+* Käyttäjä voi luoda uuden käyttäjätunnuksen ja salasanan.
+* Käyttäjä voi kirjautua sisään.
 
 ### Kirjautumisen jälkeen
 
-Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä vaatteet ja tarvikkeet sekä niihin liittyvät tiedot, jotka sisältävät ainakin seuraavat tiedot:
-* tyyppi (vaate, kengät, tarvike)
+Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä tarvikkeet sekä niihin liittyvät tiedot:
+* tyyppi (vaate, kengät, muu tarvike)
 * kuvaus (haalari, housut, paita jne.)
-* koko
-* merkki
-* väri
-* sukupuoli (T, P, unisex)
-
-Mahdollisesti myöhemmin laajennetaan vielä seuraavilla tiedoilla:
-* suosikki (x, jos suosikki)
-* sisä/ulko(käyttöön)
-* kunto (kuin uusi, hyvä, tyydyttävä, rikki)
-* pesty (kyllä, ei, n.a.)
-* kuva(jos mahdollista)
-* huomioitavaa
+* koko (92, 25, 80cm)
+* merkki (Reima, Stokke)
+* väri (punainen, keltainen)
+* oman käyttäjätunnuksen
 
 Toiminnallisuudet:
-* Käyttäjä näkee sivustolle lisäämänsä vaatteet ja tarvikkeet. #TEHTY VKO 5
-* Käyttäjä voi lisätä uuden vaatteen tai tarvikkeen (eli rivin tietoineen). #TEHTY VKO 4
-* Käyttäjä voi kirjautua ulos (log out) sovelluksesta. #TEHTY VKO 4
-* Käyttäjä voi siirtyä kaikkien ikkunoiden välillä. #TEHTY VKO 5
-* Käyttäjä näkee vain oman listansa eli ohjelmalla voi olla useita käyttäjiä. #TEHTY VKO 6
-* Käyttäjä voi lisätä ainoastaan 3 eri tyyppisiä tarvikkeita (vaate, kengät, tarvike) dropdown-valikon avulla. #TEHTY VKO 6
-* Käyttäjä voi valita, mitkä tiedot listanäkymässä näkyy tarviketyypin mukaan eli lisätty perushakutoiminto. #TEHTY VKO 6
+* Käyttäjä näkee sivustolle lisäämänsä tarvikkeet listanäkymässä.
+* Käyttäjä voi valita, mitkä tiedot listanäkymässä näkyy tarviketyypin mukaan eli lisätty perushakutoiminto.
+* Käyttäjä voi poistaa valitsemansa rivin tiedot listanäkymästään ja rekisteristään.
+* Käyttäjä voi lisätä uuden tarvikkeen (eli rivin tietoineen).
+* Käyttäjä voi valita dropdown-valikon avulla, onko lisättävä tarvike vaate, kengät vai muu tarvike.
+* Käyttäjä voi liikkua painikkeiden avulla näkymien välillä.
+* Käyttäjä näkee vain oman listansa eli ohjelmalla voi olla useita käyttäjiä.
+* Käyttäjä voi kirjautua ulos sovelluksesta.
 
 ## Toimintaympäristön rajoitteet
 
-Sovelluksen tulee toimia Linux-käyttöjärjestelmällä varustetussa tietokoneessa.
+Sovellus toimii ainakin Linux-käyttöjärjestelmällä varustetussa tietokoneessa. Myös ainakin OS-käyttöjärjestelmällä sovellus on toiminut.
 Kaikki sovelluksen tiedot talletetaan paikallisen koneen levylle.
 
 ## Jatkokehitysideoita ja muuta
-1. Tehdään hakutoiminto (search), jonka avulla *normaalikäyttäjä* voi omasta rekisteristään etsiä vaatteita ja tavaroita tietyin parametrein (esim. koko).
+1. Laajennetaan hakutoimintoa niin, että *normaalikäyttäjä* voi omasta rekisteristään etsiä tarvikkeita vapaatekstin avulla.
 1. Kuvan lisäys jokaiselle tuotteelle/tarvikkeelle rekisteriin.
-2. Vaate/tarvike on mahdollista poistaa rekisteristä.
-3. *Normaalikäyttäjä* voi merkitä, jos hän on lainannut joitain vaatteita tai tavaroita joksikin aikaväliksi ja kenelle.
-4. *Normaalikäyttäjä* voisi pitää kirjaa seuraavista hankinnoista eli mitä tulee hankkia ja milloin.
-5. *Normaalikäyttäjä* voisi nähdä yhteenvetotaulukossa kuinka monta vaatetta tai tarviketta hänellä on rekisterissä ja ehkä jaoteltuna tiettyihin osakokonaisuuksiin.
-6. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa vaatteet ja tarvikkeet, joista on kiinnostunut.
+1. *Normaalikäyttäjä* voi merkitä, jos hän on lainannut joitain tarvikkeita joksikin aikaväliksi ja kenelle.
+1. *Normaalikäyttäjä* voisi pitää kirjaa seuraavista hankinnoista eli mitä tulee hankkia ja milloin.
+1. *Normaalikäyttäjä* voisi nähdä yhteenvetotaulukossa kuinka monta tarviketta hänellä on rekisterissä ja jaoteltuna vaatteisiin, kenkiin ja muihin tarvikkeisiin.
+1. Voisi lisätä toisen käyttäjäroolin, joka olisi *vieraileva käyttäjä*. *Vieraileva käyttäjä* voisi luoda käyttäjätunnuksen ja päästä *normaalikäyttäjältä* saamaansa salasanaa vastaan katsomaan ja selaamaan kyseisen *normaalikäyttäjän* tietoja. *Vieraileva käyttäjä* voisi merkata omaan tauluunsa tarvikkeet, joista on kiinnostunut.

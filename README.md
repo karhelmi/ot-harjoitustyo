@@ -2,17 +2,19 @@
 
 ## Status
 
-Ohjelma on työn alla. Käyttäjä voi tällä hetkellä lisätä uuden käyttäjätunnuksen, kirjautua sisään, tarkastella omaa tarvikelistaa, tarkastella omalta tarvikelistalta vain tietyntyyppisiä tarvikkeita, lisätä uusia tarvikkeita listaan sekä kirjautua ulos. Tämän jälkeen käyttäjä voi halutessaan kirjautua takaisin sisään jne. Käyttäjiä voi olla useita, ja jokaisella on omat listansa.
-
-## Python-versio
-Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
+Ohjelman lopullisesta versiosta on muodostettu Release eikä ohjelmaa tulla kurssin puitteissa enää jatkokehittämään.
 
 ## Yleistä
   
-Olen tekemässä tätä ohjelmaa Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
+Olen tehnyt ohjelman Helsingin yliopiston Ohjelmistotekniikan kurssin harjoitustyönä noin 6 viikon aikana keväällä 2021.
 Tämä on ensimmäinen tekemäni tämänkaltainen sovellus.
 
-Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lisätä omalla "sivustollaan" vaatekappale- tai tarvikekohtaista tietoa. Tavoitteena on myös rakentaa erinäisiä toimintoja lisätyille tiedoille. Lisätietoja löydät esimerkiksi Vaatimusmäärittely-dokumentista (linkki alla).
+Sovellus on lastentarvikerekisteri, jonka avulla käyttäjä voi pitää kirjaa lastentarvikekohtaisesta tiedosta omalla sivustollaan.
+Toki ohjelmaa voi käyttää myös aikuisten tarvikkeille, mutta se on suunniteltu erityisesti lapsiperheiden avuksi. Katso lisätietoja ohjelman toiminnoista Vaatimusmäärittely-dokumentista (linkki alla).
+
+## Python-versio
+
+Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
 
 ## Dokumentaatio
   
@@ -20,18 +22,20 @@ Sovellus on lasten vaate- ja tarvikerekisteri, jonka avulla käyttäjä voi lis�
 * [Työaikakirjanpito](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 * [Arkkitehtuuri-dokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 * [Käyttöohjeet](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+* [Testausdokumentti]((https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
 ## Release-linkki
-Ohjelman viimeisin eli viikon 6 Release on saatavilla [täältä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko6).
+Ohjelman Release on saatavilla [täältä](UPDATE!).
 Lataa lähdekoodi koneellesi ja katso tämän jälkeen suoritettavat asennusohjeet seuraavan otsikon alta.
 
 Linkit aiempiin Releaseihin:
 
+[Viikon 6 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko6)
 [Viikon 5 Release](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennusohjeet Releasea varten
 
-Mene lataamasi lähdekoodin juurihakemistoon "ot-harjoitustyö" komentoriviltäsi ja suorita siellä seuraavat komennot:
+Mene lataamasi lähdekoodin juurihakemistoon "ot-harjoitustyo" komentoriviltäsi ja suorita siellä seuraavat komennot:
 
 1. Asenna riippuvuudet komennolla: **poetry install**
 2. Alusta tietokanta komennolla: **poetry run invoke initialize** (tämä tarvitsee tehdä vain kerran, vaikka käyttäisi komentoa 3. uudelleen)

@@ -21,4 +21,5 @@
 |27.4.   |  7    | Eri käyttäjien listat eriytetty. Tyyppitieto muutettu dropdown-valikoksi (paljon taistelua tuon kanssa). Lista voidaan valita näyttävän vain valitut tarvikkeet tyypin mukaan (dropdown-menu).|
 |29.4.   |  6    | Koodin laatua parannettu lyhentämällä yksittäisten metodien pituuksia. Testauksen kanssa työstöä. Docstringin aloitus. Alustavan arkkitehtuurikuvauksen tekoa. Käyttöohjeen laadinnan aloitus. | 
 |4.5.    |  3    | Lisätestien luominen. Config-tiedosto jne. tietokantojen eriyttäminen, niin että testit toimii hyvin nyt. Viimeistely. Viikon 6 palautus. |
-|Yhteensä|  68   | |
+|11.5.   |  4    | Rivin poistamisen metodin lisäys. Dokumenttien ja kuvien päivittämistä loppupalautusta varten. |
+|Yhteensä|  72   | |

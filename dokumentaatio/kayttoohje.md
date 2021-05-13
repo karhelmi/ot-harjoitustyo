@@ -1,5 +1,15 @@
 # Käyttöohje
 
+## Ohjelman käynnistäminen
+Sinun tulee ensin ladata lähdekoodi koneellesi, jotta voit käyttää sitä. Lataa lopullisen version lähdekoodi [täältä](UPDATE!).
+
+Mene lataamasi lähdekoodin juurihakemistoon "ot-harjoitustyo" komentoriviltäsi, ja suorita siellä seuraavat komennot:
+
+1. Asenna riippuvuuden komennolla: **poetry install**
+2. Alusta tietokanta komennolla: **poetry run invoke initialize** (tämä tarvitsee tehdä vain kerran, vaikka käyttäisit komentoa 3 uudelleen)
+3. Tämän jälkeen voit käynnistää ohjelman komennolla: **poetry run invoke start**
+
+
 ## Yleistä
 Ohjelmassa on viisi eri näkymää:
 * Kirjaudu sisään
@@ -43,6 +53,8 @@ valikosta, jossa ensin lukee "kaikki". Tämän jälkeen paina painiketta "Näyt�
 näkee ainoastaan valitsemansa tarviketyypin mukaiset tarvikkeet.
 
 Käyttäjä voi siirtyä lisäämään uusia tarvikkeita painikkeella "Lisää uusi tarvike". Tällöin hän siirtyy "Lisää tarvike" -näkymään.
+
+Käyttäjä voi myös poistaa tarvikkeen valitsemalla poistettavan rivin ja painamalla tämän jälkeen painiketta "Poista valittu tarvike".
 
 Hän voi myös kirjautua ulos, jolloin hän siirtyy "Kirjauduit ulos" -näkymään.
 
