@@ -1,4 +1,4 @@
-# Alustava määrittelydokumentti: Vaatimusmäärittely
+# Vaatimusmäärittelydokumentti
 
 ## Sovelluksen tarkoitus
 
@@ -15,7 +15,7 @@ Sovelluksella on yksi käyttäjärooli, joka on *normaalikäyttäjä*.
 ## Käyttöliittymäluonnos
 
 Ohjelmassa on viisi näkymää: i) Kirjaudu sisään, ii) Luo uusi käyttäjätunnus ja salasana, 
-iii) Tarvikelistasi, iv) Lisää tarvike ja v) Kirjauduit ulos. Näkymistä pääsee toisiin näkymiin painikkeilla  (pallot).
+iii) Tarvikelistasi, iv) Lisää tarvike ja v) Kirjauduit ulos. Näkymistä pääsee toisiin näkymiin painikkeilla. Alla on esitetty karkeantasoinen käyttöliittymäluonnos.
 
 ![](./kuvat/kayttoliittymaluonnos_vaatimusmaarittelyyn_11.5.21.png)
 
