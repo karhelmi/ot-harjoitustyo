@@ -23,7 +23,7 @@ Käyttäjällä tulee olla Python versio 3.6 tai suurempi, jotta ohjelma toimii.
 * [Testausdokumentti](https://github.com/karhelmi/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
 
 ## Release-linkki
-Ohjelman Release on saatavilla [täältä](UPDATE!).
+Ohjelman lopullisen version Release on saatavilla [täältä](UPDATE!).
 Lataa lähdekoodi koneellesi ja katso tämän jälkeen suoritettavat asennusohjeet seuraavan otsikon alta.
 
 Linkit aiempiin Releaseihin:
