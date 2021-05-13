@@ -21,11 +21,9 @@ Käyttöliittymä on toteutettu Tkinterillä. Siinä on viisi eri näkymää:
 * Lisää tarvike
 * Kirjauduit ulos
 
-Jokainen näkymä on toteutettu omana luokkana, joiden välillä käyttäjä voi siirtyä näkymässä olevien painikkeiden avulla.
-Näkymien välittäjänä toimii ui-luokka, jolla ei ole omaa erillistä näkymää.
+Jokainen näkymä on toteutettu omana luokkana, joiden välillä käyttäjä voi siirtyä näkymässä olevien painikkeiden avulla. Näkymien välittäjänä toimii ui-luokka, jolla ei ole omaa erillistä näkymää.
 
-Tarvikelistasi-näkymässä käyttäjä voi valita tarviketyypit (vaate, kengät, muu tarvike), jotka haluaa nähdä. Käyttäjä näkee
-luonnollisesti vain omat (omaa käyttäjätunnusta vastaavat) tarvikkeensa.
+Tarvikelistasi-näkymässä käyttäjä voi valita tarviketyypit (vaate, kengät, muu tarvike), jotka haluaa nähdä. Käyttäjä näkee luonnollisesti vain omat (omaa käyttäjätunnusta vastaavat) tarvikkeensa.
 
 ## Palvelutaso eli sovelluslogiikka
 
@@ -34,8 +32,7 @@ Luokkakaavio esittää ohjelman yksityiskohtaisen sisällön (alla).
 ![](./kuvat/ot-harjoitustyo_luokkakaavio.jpg)
 
 Kaaviosta voi nähdä, kuinka Appservice-luokka asettuu käyttöliittymän ja tietokantatason väliin eriyttäen nämä toisistaan.
-Käyttäjä- ja tarviketieto (User ja Item) siirtyy käyttäjältä käyttöliittymän kautta ja palvelutason toimintojen avulla
-tietokantatasoon tallennettavaksi.
+Käyttäjä- ja tarviketieto (User ja Item) siirtyy käyttäjältä käyttöliittymän kautta ja palvelutason toimintojen avulla tietokantatasoon tallennettavaksi.
 
 ## Tietokantataso eli tietojen pysyväistalletus
 
@@ -64,13 +61,14 @@ Sisäänkirjautumisnäkymä toimii samankaltaisella logiikalla. Käyttäjä kirj
 "kirjaudu sisään" -painiketta. Tällöin metodi lähettää tiedot sovelluslogiikkatasolle, joka edelleen lähettää
 tiedot tietokantatasolle. Jos käyttäjätunnus löytyy tietokannasta ja salasana vastaa käyttäjätunnuksen salasanaa,
 tietokantataso palauttaa tiedot sovelluslogiikkatasolle, joka palauttaa ne käyttäjänäkymätasolle, jolloin
-metodi päättyy siihen, että näkymä vaihtuu "lisää tarvike" -näkymään.
+metodi päättyy siihen, että näkymä vaihtuu "Tarvikelistasi"-näkymään.
 
 ![](./kuvat/ot-harjoitustyo_sekvenssikaavio2.png)
 
+Mikäli käyttäjätunnus olisi jo olemassa tai salasana olisi väärin, käyttäjä saa tästä viestin käyttöliittymätasolla.
+
 Muut toiminnallisuudet seuraavat samaa kaavaa, että käyttöliittymä on yhteydessä sovelluslogiikkatasolle,
-joka on yhteydessä tietokantatasolle. Mikäli käyttäjätunnus olisi jo olemassa tai salasana olisi väärin,
-käyttäjä saa tästä viestin käyttöliittymätasolla.
+joka on yhteydessä tietokantatasolle.
 
 ## Ohjelman rakenteeseen jääneet heikkoudet
 
