@@ -48,7 +48,7 @@ Tämän jälkeen käyttäjä siirtyy takaisin "Kirjaudu sisään" -näkymään.
 ## Tarvikelistasi
 Tässä näkymässä käyttäjä pääsee tarkastelemaan lisäämiään tarvikkeita.
 
-Tarviketyyppejä on kolme (vaate, kengät, tarvike). Jos haluat, että listalla näkyy vain yksi tarviketyyppi, valitse haluamasi tyyppi
+Tarviketyyppejä on kolme (vaate, kengät ja muu tarvike). Jos haluat, että listalla näkyy vain yksi tarviketyyppi, valitse haluamasi tyyppi
 valikosta, jossa ensin lukee "kaikki". Tämän jälkeen paina painiketta "Näytä valitut tarvikkeet", jolloin lista päivittyy ja käyttäjä
 näkee ainoastaan valitsemansa tarviketyypin mukaiset tarvikkeet.
 
