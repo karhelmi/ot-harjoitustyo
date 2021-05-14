@@ -33,11 +33,11 @@ Toiminnallisuudet:
 
 Kirjautumisen jälkeen *normaalikäyttäjälle* avautuu alue, jolla hän näkee aiemmin sivustolle lisäämänsä tarvikkeet sekä niihin liittyvät tiedot:
 * tyyppi (vaate, kengät, muu tarvike)
-* kuvaus (haalari, housut, paita jne.)
-* koko (92, 25, 80cm)
-* merkki (Reima, Stokke)
-* väri (punainen, keltainen)
-* oma käyttäjätunnus
+* kuvaus (esim. haalari, housut, paita jne.)
+* koko (esim. 92, 25, 80cm)
+* merkki (esim. Reima, Stokke)
+* väri (esim. punainen, keltainen)
+* oma käyttäjätunnus (annettuna, ei voi muuttaa)
 
 Toiminnallisuudet:
 * Käyttäjä näkee sivustolle lisäämänsä tarvikkeet listanäkymässä.
