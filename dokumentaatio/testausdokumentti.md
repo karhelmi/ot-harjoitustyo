@@ -22,7 +22,7 @@ Sovelluslogiikkatason testit testaavat, että käyttäjätunnuksen lisäys, sis�
 toimivat oikein. Haettavat tiedot kulkevat tietokantatason kautta.
 
 Ohjelman testauskattavuusraportti alla näyttää, että sovelluksen testauksen haarautumakattavuus on 87%.
-Käyttöliittymätaso ei sisälly tähän testaukseen eikä index.py.
+Käyttöliittymätaso ei sisälly tähän testaukseen eikä index.py. Kaikki automatisoidut testit menevät läpi.
 
 Tarvikkeen poistometodit ja erilaiset ValueError-osat ovat jääneet testauksen ulkopuolelle, mutta näitä
 on testattu erityisen paljon manuaalisessa testauksessa.
@@ -34,5 +34,5 @@ on testattu erityisen paljon manuaalisessa testauksessa.
 Ohjelmaa on testattu myös manuaalisesti Linux-ympäristössä. Sovelluksen Release-versio on ladattu
 koneelle ja käytetty käyttöohjeen mukaisesti.
 
-Kaikkia toiminnallisuuksia, painikkeita sekä oikeita ja vääriä syötteitä on testattu. Testauksen
+Kaikkia toiminnallisuuksia, painikkeita sekä oikeita ja vääriä syötteitä on testattu. Manuaalisen testauksen
 perusteella ohjelma toimii hyvin.
