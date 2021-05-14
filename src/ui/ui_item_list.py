@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk, StringVar, constants, OptionMenu
+from tkinter import ttk, StringVar, constants, OptionMenu
 import tkinter as tk
 from services.app_service import app_service
 
@@ -15,7 +15,7 @@ class ItemListUI:
         self.info_message = None
         self.info_label = None
         self.username = username
-        self.selection_dropdown = ["kaikki", "vaate", "kengät", "tarvike"]
+        self.selection_dropdown = ["kaikki", "vaate", "kengät", "muu tarvike"]
         self.selection = self.selection_dropdown[0]
 
         self.show_item_list_ui()
@@ -43,16 +43,20 @@ class ItemListUI:
             master=self.frame, text="Lisää uusi tarvike", command=self.handle_add_item_button_click)
         button_add_item.grid(row=3, column=0, padx=5, pady=5)
 
+        button_delete_item = tk.Button(
+            master=self.frame, text="Poista valittu tarvike", command=self.handle_delete_item_button_click)
+        button_delete_item.grid(row=4, column=0, padx=5, pady=5)
+
         button_selection = tk.Button(
             master=self.frame, text="Näytä valitut tarvikkeet", command=self.handle_selection_button_click)
-        button_selection.grid(row=4, column=0, padx=5, pady=5)
+        button_selection.grid(row=5, column=0, padx=5, pady=5)
 
         self.dropdown = StringVar(master=self.frame)
         self.dropdown.set(self.selection)
         self.dropdown_menu = OptionMenu(
             self.frame, self.dropdown, *self.selection_dropdown)
         self.dropdown_menu.grid(
-            row=4, column=1, sticky=(constants.W), padx=5, pady=5)
+            row=5, column=1, sticky=(constants.W), padx=5, pady=5)
 
         self.show_item_table_as_list()
 
@@ -91,3 +95,9 @@ class ItemListUI:
 
     def handle_add_item_button_click(self):
         self.act_show_item_add_view(self.username)
+
+    def handle_delete_item_button_click(self):
+        selected_row = self.tree.selection()[0]
+        selected_item = list(self.tree.item(selected_row)['values'])
+        app_service.delete_item_command(selected_item)
+        self.tree.delete(selected_row)

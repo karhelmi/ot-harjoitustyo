@@ -1,5 +1,3 @@
-import sqlite3
-import os
 from item import Item
 from database_connection import get_database_connection
 
@@ -75,21 +73,22 @@ class ItemRepository:
 
         return all_items_table
 
-    def find_by_item_type(self, typex):
-        """Ei vielä käytössä. Etsii tarviketyypin mukaiset tarvikkeet tietokannasta.
+    def delete_item_from_database(self, selected_item: list):
+        """Poistaa tietokannasta argumenttina annetut tarviketiedot.
 
         Args:
-            typex: tarviketyyppi
+            selected_item: tarviketiedot
 
         Returns:
-            Hakua vastaavat tarvikeoliot.
+            Poistetut tarviketiedot.
         """
+
         cursor = self.connection.cursor()
 
-        row = cursor.execute(
-            "SELECT * FROM  items WHERE type = ?", (typex,)).fetchall()
+        deleted_item = cursor.execute(
+            "DELETE FROM items WHERE type=? AND description=? AND size=? AND brand=? AND color=? AND username=?", [selected_item[0], selected_item[1], selected_item[2], selected_item[3], selected_item[4], selected_item[5]])
 
-        return get_item_by_row(row)
+        return deleted_item
 
 
 item_repository = ItemRepository(get_database_connection())

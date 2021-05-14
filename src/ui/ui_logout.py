@@ -1,5 +1,4 @@
-from tkinter import Tk, ttk, StringVar, constants
-from services.app_service import app_service
+from tkinter import ttk, constants
 
 
 class LogoutUI:

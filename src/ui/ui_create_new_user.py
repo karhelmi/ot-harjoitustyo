@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk, StringVar, constants, font
+from tkinter import ttk, StringVar, constants
 from services.app_service import app_service
 
 
@@ -73,6 +73,9 @@ class CreateNewUserUI:
             row=6, column=0, columnspan=2, padx=5, pady=5)
 
     def handle_create_user_button_click(self):
+        """Nappia painamalla lisää käyttäjätunnuksen ja salasanan tietokantaan palvelutason kautta.
+        """
+
         username_str = self.username_entry.get()
         password_str = self.password_entry.get()
         password_star = len(password_str) * "*"
@@ -109,5 +112,3 @@ class CreateNewUserUI:
 
     def hide_info_message(self):
         self.info_label.grid_remove()
-
-# Lukee asiat TkInter-taulusta: Lisää nappiin command=self.handle_button_click tai vastaava metodi.

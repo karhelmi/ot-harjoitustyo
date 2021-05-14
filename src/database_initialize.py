@@ -2,6 +2,12 @@ from database_connection import get_database_connection
 
 
 def drop_tables(connection):
+    """Poistaa mahdolliset olemassa olevat taulukot tietokannasta.
+
+    Args:
+        connection: määritetty yhteys, missä taulukot on.
+    """
+
     cursor = connection.cursor()
 
     cursor.execute('''
@@ -16,7 +22,13 @@ def drop_tables(connection):
 
 
 def create_tables(connection):
-    cursor = connection.cursor()  # "yhteys" tietokantaan
+    """Metodi luo tyhjään tietokantaan oliotietoja varten kaksi taulukkoa.
+
+    Args:
+        connection: määritetty yhteys, mihin taulukot luodaan.
+    """
+
+    cursor = connection.cursor()
 
     cursor.execute('''
         CREATE TABLE users (
@@ -38,10 +50,13 @@ def create_tables(connection):
         );
     ''')
 
-    connection.commit()  # suorittaa, mitä olen määrännyt yllä.
+    connection.commit()
 
 
 def initialize_database():
+    """Luo tietokantayhteyden sekä poistaa siellä mahdollisesti olevat taulut ja luo uudet.
+    """
+
     connection = get_database_connection()
 
     drop_tables(connection)

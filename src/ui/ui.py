@@ -12,8 +12,6 @@ class MasterUI:
 
     def start(self):
         self.show_login_view()
-        # self.show_create_user_view()
-        # self.show_item_list_view()
 
     def hide_current_view(self):
         if self.current_view:

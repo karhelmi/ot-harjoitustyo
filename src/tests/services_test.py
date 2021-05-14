@@ -8,7 +8,6 @@ from tests.conftest import initialize_database
 class TestAppService(unittest.TestCase):
     def setUp(self):
         initialize_database()
-        #self.user = app_service.create_new_user_command("Testi", "testi")
 
     def test_correct_name_and_password(self):
         user = app_service.create_new_user_command("Testi", "testi")
@@ -28,7 +27,6 @@ class TestAppService(unittest.TestCase):
     def test_correct_item_output(self):
         user = app_service.create_new_user_command("Testi", "testi")
 
-        #username = "Testi"
         selection = "kaikki"
 
         app_service.create_item_command(

@@ -1,14 +1,12 @@
 import unittest
 from user import User
 from item import Item
-#from tests.conftest import initialize_database
 from repositories.user_repository import user_repository
 from repositories.item_repository import item_repository
 
 
 class TestRepositories(unittest.TestCase):
     def setUp(self):
-        # build_database_for_tests()
         self.user = user_repository.create_user_to_database(
             User("Testi", "testi"))
 

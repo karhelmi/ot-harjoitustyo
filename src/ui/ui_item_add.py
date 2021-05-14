@@ -1,4 +1,4 @@
-from tkinter import Tk, ttk, StringVar, constants, font, OptionMenu
+from tkinter import ttk, StringVar, constants, OptionMenu
 from services.app_service import app_service
 
 
@@ -15,7 +15,7 @@ class ItemAddUI:
         self.info_message = None
         self.info_label = None
 
-        self.type1_dropdown = ["vaate", "kengät", "tarvike"]
+        self.type1_dropdown = ["vaate", "kengät", "muu tarvike"]
         self.description2_entry = None
         self.size3_entry = None
         self.brand4_entry = None
@@ -75,7 +75,7 @@ class ItemAddUI:
     def add_row2_description_info(self):
 
         description2_label = ttk.Label(
-            master=self.frame, text="Kuvaus (esim. ulkohaalari, housut, paita jne.)")
+            master=self.frame, text="Kuvaus")
         description2_label.grid(row=2, column=0, padx=5, pady=5)
 
         self.description2_entry = ttk.Entry(master=self.frame)
@@ -84,7 +84,7 @@ class ItemAddUI:
 
     def add_row3_size_info(self):
         size3_label = ttk.Label(
-            master=self.frame, text="Koko (esim. 92, 132, XS)")
+            master=self.frame, text="Koko")
         size3_label.grid(row=3, column=0, padx=5, pady=5)
 
         self.size3_entry = ttk.Entry(master=self.frame)
@@ -93,7 +93,7 @@ class ItemAddUI:
 
     def add_row4_brand_info(self):
         brand4_label = ttk.Label(
-            master=self.frame, text="Merkki (esim. ReimaTec)")
+            master=self.frame, text="Merkki")
         brand4_label.grid(row=4, column=0, padx=5, pady=5)
 
         self.brand4_entry = ttk.Entry(master=self.frame)

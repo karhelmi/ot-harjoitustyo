@@ -108,5 +108,20 @@ class AppService:
 
         return all_items_table
 
+    def delete_item_command(self, selected_item: list):
+        """Poistaa käyttäjän valinnan mukaiset tarviketiedot tietokannasta.
+
+        Args:
+            selected_item: tarviketiedot
+
+        Returns:
+            Poistetut tarviketiedot.
+        """
+
+        deleted_item = self.item_repository.delete_item_from_database(
+            selected_item)
+
+        return deleted_item
+
 
 app_service = AppService(user_repository, item_repository)

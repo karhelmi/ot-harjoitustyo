@@ -1,5 +1,3 @@
-import sqlite3
-import os
 from user import User
 from database_connection import get_database_connection
 
@@ -69,19 +67,6 @@ class UserRepository:
             "SELECT * FROM  users WHERE username = ?", (username,)).fetchone()
 
         return get_user_by_row(row)
-
-    def find_all_users(self):
-        """Etsii tietokannasta kaikki käyttäjät ja salasanat. Ei vielä käytössä.
-        """
-
-        cursor = self.connection.cursor()
-
-        all_users_table = cursor.execute("SELECT * FROM  users").fetchall()
-
-        print("Lista luoduista käyttäjätunnuksista ja salasanoista")
-
-        for row in all_users_table:
-            print(row["username"], row["password"])
 
 
 user_repository = UserRepository(get_database_connection())
