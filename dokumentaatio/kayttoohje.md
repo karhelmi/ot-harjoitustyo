@@ -1,7 +1,7 @@
 # Käyttöohje
 
 ## Ohjelman käynnistäminen
-Sinun tulee ensin ladata lähdekoodi koneellesi, jotta voit käyttää sitä. Lataa lopullisen version lähdekoodi [täältä](UPDATE!).
+Sinun tulee ensin ladata lähdekoodi koneellesi, jotta voit käyttää sitä. Lataa lopullisen version lähdekoodi [täältä](https://github.com/karhelmi/ot-harjoitustyo/releases/tag/loppupalautus).
 
 Mene lataamasi lähdekoodin juurihakemistoon "ot-harjoitustyo" komentoriviltäsi, ja suorita siellä seuraavat komennot:
 
