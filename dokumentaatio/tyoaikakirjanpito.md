@@ -24,4 +24,5 @@
 |11.5.   |  4    | Rivin poistamisen metodin lisäys. Dokumenttien ja kuvien päivittämistä loppupalautusta varten. |
 |12.5.   |  1    | Testausdokumentin kirjoittamista. |
 |13.5.   |  4    | Dokumenttien viimeistelyä ja pieniä muutoksia koodiin.|
-|Yhteensä|  77   | |
+|13.5.   |  2    | Lopulliset testit. Finalisointi. Loppupalautus|
+|Yhteensä|  79   | Huhhuh! Valmista tuli! Eikun käyttöön!|
