@@ -7,7 +7,7 @@ Ohjelmassa on kolme tasoa:
 * palvelutaso (services) vastaa ohjelman sovelluslogiikasta ja toiminnoista.
 * tietokantataso (repositories) vastaa datan tallennuksesta SQLite-tietokantaan.
 
-Tämän lisäksi ohjelmassa on käyttäjäolio (user) ja tarvikeolio (item), jotka määrittävät käytettävät tiedot.
+Tämän lisäksi ohjelmassa on käyttäjäolio (User) ja tarvikeolio (Item), jotka määrittävät käytettävät tiedot.
 Ohjelman rakennetta esittävä kuvaus on esitetty alla.
 
 ![](./kuvat/ohjelman_rakenne.jpg)
